@@ -1,0 +1,13 @@
+{% extends 'layout.twig' %}
+{% block title %}DefaultController::index{% endblock %}
+
+{% block content %}
+<h1>Pra quem reclamo</h1>
+
+
+<form action="buscaresposta" >
+	<input type="text" name="pergunta" value="teste">
+	<input type="submit">
+</form>
+
+{% endblock %}
