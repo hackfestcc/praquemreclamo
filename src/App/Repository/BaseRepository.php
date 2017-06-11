@@ -2,13 +2,16 @@
 
 namespace App\Repository;
 
+header("Access-Control-Allow-Origin: *");
+
+
 use \PDO;
 use Silex\Application;
 
 class BaseRepository
 {
 
-    private $data_source_name = "mysql:dbname=praquemreclamo;host=172.16.49.134;charset=utf8" ;
+    private $data_source_name = "mysql:dbname=praquemreclamo;host=10.0.0.104;charset=utf8" ;
     private $conn;
 
     public function __construct()
@@ -54,6 +57,18 @@ class BaseRepository
      
         return $response;
     }
+
+    public function getListaPerguntas($idcategoria, $subcategoriaid)
+    {
+        $sql = " SELECT * from tpergunta where stativo = 1  and idcategoria = ".$idcategoria." and idsubcategoria=".$idsubcategoria;
+    
+        $statement_handle = $this->conn->prepare($sql);
+        $statement_handle->execute();
+        $response = $statement_handle->fetchAll(PDO::FETCH_ASSOC);
+     
+        return $response;
+    }
+
 
 
 }

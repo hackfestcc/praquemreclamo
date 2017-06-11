@@ -38,8 +38,8 @@ class __TwigTemplate_8d9b3597fed7faef3681d8e455dc68d5d9d4ca1800782ccce5e6997acb5
         echo "<h1>Pra quem reclamo</h1>
 
 
-<form action=\"buscaresposta\" >
-\t<input type=\"text\" name=\"pergunta\" value=\"teste\">
+<form action=\"buscaresposta\" method=\"post\" >
+\t<textarea name=\"pergunta\" value=\"teste\" rows=10></textarea>
 \t<input type=\"submit\">
 </form>
 

@@ -1,9 +1,11 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
     ],
-    "hash": "667cfca2c79631ea02f4a3dded15fa52",
+    "hash": "9b452ed2a43e49d6bd7c8e3ec4b98340",
+    "content-hash": "d2bee9995b40bfdcc2ec619e6af691f4",
     "packages": [
         {
             "name": "aptoma/silex-extras",
@@ -67,6 +69,184 @@
                 "silex"
             ],
             "time": "2014-02-10 12:46:01"
+        },
+        {
+            "name": "guzzlehttp/guzzle",
+            "version": "6.2.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/guzzle/guzzle.git",
+                "reference": "8d6c6cc55186db87b7dc5009827429ba4e9dc006"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/8d6c6cc55186db87b7dc5009827429ba4e9dc006",
+                "reference": "8d6c6cc55186db87b7dc5009827429ba4e9dc006",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/promises": "^1.0",
+                "guzzlehttp/psr7": "^1.4",
+                "php": ">=5.5"
+            },
+            "require-dev": {
+                "ext-curl": "*",
+                "phpunit/phpunit": "^4.0",
+                "psr/log": "^1.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "6.2-dev"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/functions_include.php"
+                ],
+                "psr-4": {
+                    "GuzzleHttp\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Dowling",
+                    "email": "mtdowling@gmail.com",
+                    "homepage": "https://github.com/mtdowling"
+                }
+            ],
+            "description": "Guzzle is a PHP HTTP client library",
+            "homepage": "http://guzzlephp.org/",
+            "keywords": [
+                "client",
+                "curl",
+                "framework",
+                "http",
+                "http client",
+                "rest",
+                "web service"
+            ],
+            "time": "2017-02-28 22:50:30"
+        },
+        {
+            "name": "guzzlehttp/promises",
+            "version": "v1.3.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/guzzle/promises.git",
+                "reference": "a59da6cf61d80060647ff4d3eb2c03a2bc694646"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/guzzle/promises/zipball/a59da6cf61d80060647ff4d3eb2c03a2bc694646",
+                "reference": "a59da6cf61d80060647ff4d3eb2c03a2bc694646",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.4-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "GuzzleHttp\\Promise\\": "src/"
+                },
+                "files": [
+                    "src/functions_include.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Dowling",
+                    "email": "mtdowling@gmail.com",
+                    "homepage": "https://github.com/mtdowling"
+                }
+            ],
+            "description": "Guzzle promises library",
+            "keywords": [
+                "promise"
+            ],
+            "time": "2016-12-20 10:07:11"
+        },
+        {
+            "name": "guzzlehttp/psr7",
+            "version": "1.4.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/guzzle/psr7.git",
+                "reference": "f5b8a8512e2b58b0071a7280e39f14f72e05d87c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/guzzle/psr7/zipball/f5b8a8512e2b58b0071a7280e39f14f72e05d87c",
+                "reference": "f5b8a8512e2b58b0071a7280e39f14f72e05d87c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0",
+                "psr/http-message": "~1.0"
+            },
+            "provide": {
+                "psr/http-message-implementation": "1.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.4-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "GuzzleHttp\\Psr7\\": "src/"
+                },
+                "files": [
+                    "src/functions_include.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Dowling",
+                    "email": "mtdowling@gmail.com",
+                    "homepage": "https://github.com/mtdowling"
+                },
+                {
+                    "name": "Tobias Schultze",
+                    "homepage": "https://github.com/Tobion"
+                }
+            ],
+            "description": "PSR-7 message implementation that also provides common utility methods",
+            "keywords": [
+                "http",
+                "message",
+                "request",
+                "response",
+                "stream",
+                "uri",
+                "url"
+            ],
+            "time": "2017-03-20 17:10:46"
         },
         {
             "name": "monolog/monolog",
@@ -140,12 +320,12 @@
             "version": "v1.1.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/fabpot/Pimple.git",
+                "url": "https://github.com/silexphp/Pimple.git",
                 "reference": "2019c145fe393923f3441b23f29bbdfaa5c58c4d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fabpot/Pimple/zipball/2019c145fe393923f3441b23f29bbdfaa5c58c4d",
+                "url": "https://api.github.com/repos/silexphp/Pimple/zipball/2019c145fe393923f3441b23f29bbdfaa5c58c4d",
                 "reference": "2019c145fe393923f3441b23f29bbdfaa5c58c4d",
                 "shasum": ""
             },
@@ -182,6 +362,56 @@
                 "dependency injection"
             ],
             "time": "2013-11-22 08:30:29"
+        },
+        {
+            "name": "psr/http-message",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/http-message.git",
+                "reference": "f6561bf28d520154e4b0ec72be95418abe6d9363"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/http-message/zipball/f6561bf28d520154e4b0ec72be95418abe6d9363",
+                "reference": "f6561bf28d520154e4b0ec72be95418abe6d9363",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Http\\Message\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for HTTP messages",
+            "homepage": "https://github.com/php-fig/http-message",
+            "keywords": [
+                "http",
+                "http-message",
+                "psr",
+                "psr-7",
+                "request",
+                "response"
+            ],
+            "time": "2016-08-06 14:39:51"
         },
         {
             "name": "psr/log",
@@ -311,12 +541,12 @@
             "target-dir": "Symfony/Component/BrowserKit",
             "source": {
                 "type": "git",
-                "url": "https://github.com/symfony/BrowserKit.git",
+                "url": "https://github.com/symfony/browser-kit.git",
                 "reference": "0248b2dfc9cd6b259555d232eedfb1283eb496c3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/BrowserKit/zipball/0248b2dfc9cd6b259555d232eedfb1283eb496c3",
+                "url": "https://api.github.com/repos/symfony/browser-kit/zipball/0248b2dfc9cd6b259555d232eedfb1283eb496c3",
                 "reference": "0248b2dfc9cd6b259555d232eedfb1283eb496c3",
                 "shasum": ""
             },
@@ -366,12 +596,12 @@
             "target-dir": "Symfony/Component/CssSelector",
             "source": {
                 "type": "git",
-                "url": "https://github.com/symfony/CssSelector.git",
+                "url": "https://github.com/symfony/css-selector.git",
                 "reference": "352552da1f50a79f6a6fa427e4a85ee2ea1945f6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/CssSelector/zipball/352552da1f50a79f6a6fa427e4a85ee2ea1945f6",
+                "url": "https://api.github.com/repos/symfony/css-selector/zipball/352552da1f50a79f6a6fa427e4a85ee2ea1945f6",
                 "reference": "352552da1f50a79f6a6fa427e4a85ee2ea1945f6",
                 "shasum": ""
             },
@@ -417,12 +647,12 @@
             "target-dir": "Symfony/Component/Debug",
             "source": {
                 "type": "git",
-                "url": "https://github.com/symfony/Debug.git",
+                "url": "https://github.com/symfony/debug.git",
                 "reference": "74110be5ec681a83fc5bd66dd5fd29fe85fe9c1f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Debug/zipball/74110be5ec681a83fc5bd66dd5fd29fe85fe9c1f",
+                "url": "https://api.github.com/repos/symfony/debug/zipball/74110be5ec681a83fc5bd66dd5fd29fe85fe9c1f",
                 "reference": "74110be5ec681a83fc5bd66dd5fd29fe85fe9c1f",
                 "shasum": ""
             },
@@ -472,12 +702,12 @@
             "target-dir": "Symfony/Component/DomCrawler",
             "source": {
                 "type": "git",
-                "url": "https://github.com/symfony/DomCrawler.git",
+                "url": "https://github.com/symfony/dom-crawler.git",
                 "reference": "58e85928ad277c67102a41a046160de86df44d55"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/DomCrawler/zipball/58e85928ad277c67102a41a046160de86df44d55",
+                "url": "https://api.github.com/repos/symfony/dom-crawler/zipball/58e85928ad277c67102a41a046160de86df44d55",
                 "reference": "58e85928ad277c67102a41a046160de86df44d55",
                 "shasum": ""
             },
@@ -525,12 +755,12 @@
             "target-dir": "Symfony/Component/EventDispatcher",
             "source": {
                 "type": "git",
-                "url": "https://github.com/symfony/EventDispatcher.git",
+                "url": "https://github.com/symfony/event-dispatcher.git",
                 "reference": "e3ba42f6a70554ed05749e61b829550f6ac33601"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/EventDispatcher/zipball/e3ba42f6a70554ed05749e61b829550f6ac33601",
+                "url": "https://api.github.com/repos/symfony/event-dispatcher/zipball/e3ba42f6a70554ed05749e61b829550f6ac33601",
                 "reference": "e3ba42f6a70554ed05749e61b829550f6ac33601",
                 "shasum": ""
             },
@@ -579,12 +809,12 @@
             "target-dir": "Symfony/Component/Filesystem",
             "source": {
                 "type": "git",
-                "url": "https://github.com/symfony/Filesystem.git",
+                "url": "https://github.com/symfony/filesystem.git",
                 "reference": "b3c3b5a8108b3e5d604dc23241b4ea84a067fc78"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Filesystem/zipball/b3c3b5a8108b3e5d604dc23241b4ea84a067fc78",
+                "url": "https://api.github.com/repos/symfony/filesystem/zipball/b3c3b5a8108b3e5d604dc23241b4ea84a067fc78",
                 "reference": "b3c3b5a8108b3e5d604dc23241b4ea84a067fc78",
                 "shasum": ""
             },
@@ -673,12 +903,12 @@
             "target-dir": "Symfony/Component/HttpFoundation",
             "source": {
                 "type": "git",
-                "url": "https://github.com/symfony/HttpFoundation.git",
+                "url": "https://github.com/symfony/http-foundation.git",
                 "reference": "6c6b8a7bcd7e2cc920cd6acace563fdbf121d844"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/HttpFoundation/zipball/6c6b8a7bcd7e2cc920cd6acace563fdbf121d844",
+                "url": "https://api.github.com/repos/symfony/http-foundation/zipball/6c6b8a7bcd7e2cc920cd6acace563fdbf121d844",
                 "reference": "6c6b8a7bcd7e2cc920cd6acace563fdbf121d844",
                 "shasum": ""
             },
@@ -723,12 +953,12 @@
             "target-dir": "Symfony/Component/HttpKernel",
             "source": {
                 "type": "git",
-                "url": "https://github.com/symfony/HttpKernel.git",
+                "url": "https://github.com/symfony/http-kernel.git",
                 "reference": "0605eedeb52c4d3a3144128d8336395a57be60d4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/HttpKernel/zipball/0605eedeb52c4d3a3144128d8336395a57be60d4",
+                "url": "https://api.github.com/repos/symfony/http-kernel/zipball/0605eedeb52c4d3a3144128d8336395a57be60d4",
                 "reference": "0605eedeb52c4d3a3144128d8336395a57be60d4",
                 "shasum": ""
             },
@@ -794,12 +1024,12 @@
             "target-dir": "Symfony/Bridge/Monolog",
             "source": {
                 "type": "git",
-                "url": "https://github.com/symfony/MonologBridge.git",
+                "url": "https://github.com/symfony/monolog-bridge.git",
                 "reference": "40c3e5f919d2042e73e60d024686bfdb48916f42"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/MonologBridge/zipball/40c3e5f919d2042e73e60d024686bfdb48916f42",
+                "url": "https://api.github.com/repos/symfony/monolog-bridge/zipball/40c3e5f919d2042e73e60d024686bfdb48916f42",
                 "reference": "40c3e5f919d2042e73e60d024686bfdb48916f42",
                 "shasum": ""
             },
@@ -852,12 +1082,12 @@
             "target-dir": "Symfony/Component/Routing",
             "source": {
                 "type": "git",
-                "url": "https://github.com/symfony/Routing.git",
+                "url": "https://github.com/symfony/routing.git",
                 "reference": "4abfb500aab8be458c9e3a227ea56b190584f78a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Routing/zipball/4abfb500aab8be458c9e3a227ea56b190584f78a",
+                "url": "https://api.github.com/repos/symfony/routing/zipball/4abfb500aab8be458c9e3a227ea56b190584f78a",
                 "reference": "4abfb500aab8be458c9e3a227ea56b190584f78a",
                 "shasum": ""
             },
@@ -992,12 +1222,12 @@
             "target-dir": "Symfony/Bridge/Twig",
             "source": {
                 "type": "git",
-                "url": "https://github.com/symfony/TwigBridge.git",
+                "url": "https://github.com/symfony/twig-bridge.git",
                 "reference": "4eb35ba0f8f06dfe6fc20d3660a27f233d7b2c87"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/TwigBridge/zipball/4eb35ba0f8f06dfe6fc20d3660a27f233d7b2c87",
+                "url": "https://api.github.com/repos/symfony/twig-bridge/zipball/4eb35ba0f8f06dfe6fc20d3660a27f233d7b2c87",
                 "reference": "4eb35ba0f8f06dfe6fc20d3660a27f233d7b2c87",
                 "shasum": ""
             },
@@ -1056,16 +1286,69 @@
             "time": "2013-12-31 13:43:26"
         },
         {
+            "name": "tgallice/wit-php",
+            "version": "0.3.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tgallice/wit-php.git",
+                "reference": "63d99972f2cc29242a5d8d238e00fcc10b1a65d3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tgallice/wit-php/zipball/63d99972f2cc29242a5d8d238e00fcc10b1a65d3",
+                "reference": "63d99972f2cc29242a5d8d238e00fcc10b1a65d3",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/guzzle": "^6.2",
+                "php": ">=5.5.0"
+            },
+            "require-dev": {
+                "phpspec/phpspec": "~2.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Tgallice\\Wit\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Thomas Gallice",
+                    "email": "tm.gallice@gmail.com",
+                    "homepage": "https://github.com/tgallice"
+                }
+            ],
+            "description": "Wit.ai php sdk",
+            "keywords": [
+                "bot",
+                "chat bot",
+                "chatbot",
+                "wit.ai",
+                "wit.ai sdk"
+            ],
+            "time": "2016-08-10 14:37:49"
+        },
+        {
             "name": "twig/twig",
             "version": "v1.15.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/fabpot/Twig.git",
+                "url": "https://github.com/twigphp/Twig.git",
                 "reference": "85e4ff98000157ff753d934b9f13659a953f5666"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fabpot/Twig/zipball/85e4ff98000157ff753d934b9f13659a953f5666",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/85e4ff98000157ff753d934b9f13659a953f5666",
                 "reference": "85e4ff98000157ff753d934b9f13659a953f5666",
                 "shasum": ""
             },
@@ -1658,17 +1941,11 @@
             "time": "2013-12-28 08:12:03"
         }
     ],
-    "aliases": [
-
-    ],
+    "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [
-
-    ],
-    "platform": [
-
-    ],
-    "platform-dev": [
-
-    ]
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
 }

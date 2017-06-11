@@ -1,6 +1,7 @@
 <?php
-
 namespace App\Controller;
+
+header("Access-Control-Allow-Origin: *");
 
 use Psr\Log\LoggerInterface;
 use Symfony\Component\HttpFoundation\Request;
@@ -8,6 +9,11 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use App\Utils\UtilsString;
 use App\Repository\BaseRepository;
+
+
+use Tgallice\Wit\Client;
+use Tgallice\Wit\MessageApi;
+
 
 class DefaultController
 {
@@ -17,8 +23,6 @@ class DefaultController
     private $trataString;
     private $logger;
     private $repository;
-
-
 
 
     public function __construct(\Twig_Environment $twig, LoggerInterface $logger)
@@ -53,7 +57,7 @@ class DefaultController
 
             foreach($categorias as $key => $f) {
 
-                $for[$key]['id'] = $f['idcategoria'];
+                $for[$key]['id'] = intval($f['idcategoria']);
                 $for[$key]['name'] = $f['nmcategoria'];
                 $for[$key]['icon'] = $f['dsicone'];
             }
@@ -69,8 +73,27 @@ class DefaultController
 
             foreach($subcategorias as $key => $f) {
 
-                $for[$key]['id'] = $f['iddetcategoria'];
-                $for[$key]['categoryId'] = $f['idcategoria'];
+                $for[$key]['id'] = intval($f['iddetcategoria']);
+                $for[$key]['categoryId'] = intval($f['idcategoria']);
+                $for[$key]['name'] = $f['nmdetcategoria'];
+                $for[$key]['icon'] = $f['dsicone'];
+            }
+
+
+            return new JsonResponse($for);
+        }
+
+
+
+     public function getPerguntas($idcat, $idsubcat)
+        {
+            
+            $subcategorias = $this->repository->getListaPerguntas($idcat, $idsubcat);
+
+            foreach($subcategorias as $key => $f) {
+
+                $for[$key]['categoriaId'] = intval($f['idcategoria']);
+                $for[$key]['subcategoryId'] = intval($f['iddetcategoria']);
                 $for[$key]['name'] = $f['nmdetcategoria'];
                 $for[$key]['icon'] = $f['dsicone'];
             }
@@ -84,26 +107,23 @@ class DefaultController
         {
             $pergunta = $request->get('pergunta');
             
-            $termos = $this->trataString->removePalavrasComuns($pergunta);
 
-            var_dump($termos);
+            $client = new Client('SM4D5UAN6A76J53QMZL3ETBQBOBM6DJT');
+            $response = $client->get('/message', ['q' => $pergunta,]);
+            $traducao = json_decode((string) $response->getBody(), true);
 
-            //$termos = explode(" ", $pergunta);
 
-            foreach($termos as $termo){
-                print $termo."<br>";
-            }
+            $resultado =$traducao["entities"];
+            $intencao  = $resultado["intencao"];
+            $categoria  = $resultado["categoria"];
 
-            die;
 
-            $total=0;
-            $for   = '{"Educação Básica":1,"Educação Superior":2,"Educação Indigena":3}';
+            return $this->twig->render('respostas.twig',
+            [
+                 'intencao' => $intencao[0]["value"],
+                 'categoria'=> $categoria[0]["value"],
+            ]); 
 
-            return new JsonResponse([
-                "recordsTotal" => $total,
-                "recordsFiltered" => $total,
-                'data' => $for
-            ]);
         }
 
 
