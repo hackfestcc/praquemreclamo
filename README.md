@@ -10,6 +10,10 @@ O projeto Pra quem reclamo? veio pra te ajudar.
 Neste repositório temos os códigos fontes do backend.
 
 
+## Back-end do Pra quem responde??
+
+ Feito utilizando PHP utilizando o SILEX. É necessário fazer um composer install para utiilizar o back-end.
+
 
 ## App
 
