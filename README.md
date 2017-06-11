@@ -6,7 +6,7 @@ O projeto Pra quem reclamo? veio pra te ajudar.
 
 ##App
 
-Para acessar o app para android acesso o link: App Pra Quem Reclamo?
+Para acessar o app para android acesso o link: [App Pra Quem Reclamo?](https://github.com/stefersonferreira/praquemreclamo_app/ "App Pra Quem Reclamo?")
 
 
 
