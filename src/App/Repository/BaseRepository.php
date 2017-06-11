@@ -58,9 +58,12 @@ class BaseRepository
         return $response;
     }
 
-    public function getListaPerguntas($idcategoria, $subcategoriaid)
+    public function getListaPerguntas($subcategoriaid)
     {
-        $sql = " SELECT * from tpergunta where stativo = 1  and idcategoria = ".$idcategoria." and idsubcategoria=".$idsubcategoria;
+        $sql = " select * from tdetalhecategoria dc 
+                join tperguntadetcategoria pdc on (dc.iddetcategoria = pdc.iddetcategoria)
+                join tpergunta p on (p.idpergunta = pdc.idpergunta)
+                where dc.iddetcategoria =".$subcategoriaid;
     
         $statement_handle = $this->conn->prepare($sql);
         $statement_handle->execute();

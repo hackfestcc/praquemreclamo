@@ -85,17 +85,14 @@ class DefaultController
 
 
 
-     public function getPerguntas($idcat, $idsubcat)
-        {
-            
-            $subcategorias = $this->repository->getListaPerguntas($idcat, $idsubcat);
+     public function getPerguntas($idsubcat){
+
+            $subcategorias = $this->repository->getListaPerguntas($idsubcat);
 
             foreach($subcategorias as $key => $f) {
-
-                $for[$key]['categoriaId'] = intval($f['idcategoria']);
-                $for[$key]['subcategoryId'] = intval($f['iddetcategoria']);
-                $for[$key]['name'] = $f['nmdetcategoria'];
-                $for[$key]['icon'] = $f['dsicone'];
+                $for[$key]['id'] = intval($f['idpergunta']);
+                $for[$key]['title'] = $f['dstitulo'];
+                $for[$key]['description'] = $f['dspergunta'];
             }
 
 

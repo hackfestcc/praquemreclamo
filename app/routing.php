@@ -17,11 +17,12 @@ $app->get('/api/', "app.default_controller:indexReclamacao");
 */
 $app->get('/api/getcategorias', "app.default_controller:getCategorias");
 $app->get('/api/getsubcategorias', "app.default_controller:getSubCategorias");
-$app->get('/api/perguntas/{idcat}/{idsubcat}', "app.default_controller:getPerguntas");
+$app->get('/api/perguntas/{idsubcat}', "app.default_controller:getPerguntas");
 
-
+ 
 //receberá
 //pergunta
 //categoria
 //local
+$app->get('/api/buscaresposta', "app.default_controller:getTrataPergunta");
 $app->post('/api/buscaresposta', "app.default_controller:getTrataPergunta");

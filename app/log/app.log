@@ -1522,3 +1522,450 @@
 [2017-06-11 16:40:01] silex-bootstrap.INFO: > GET /api/getcategorias [] {"clientIp":"10.0.0.100","token":"593d564160256"}
 [2017-06-11 16:40:01] silex-bootstrap.INFO: < 200 [] {"clientIp":"10.0.0.100","token":"593d564160256"}
 [2017-06-11 16:40:01] silex-bootstrap.DEBUG: Script executed in 231.227ms. {"msExecTime":231.227,"method":"GET","path":"/api/getcategorias"} {"clientIp":"10.0.0.100","token":"593d564160256"}
+[2017-06-11 16:58:58] silex-bootstrap.INFO: Matched route "GET_api_getcategorias" (parameters: "_controller": "app.default_controller:getCategorias", "_route": "GET_api_getcategorias") [] {"clientIp":"10.0.0.107","token":"593d5ab268f7d"}
+[2017-06-11 16:58:58] silex-bootstrap.INFO: > GET /api/getcategorias [] {"clientIp":"10.0.0.107","token":"593d5ab268f7d"}
+[2017-06-11 16:58:59] silex-bootstrap.ERROR: Symfony\Component\HttpKernel\Exception\MethodNotAllowedHttpException: No route found for "GET /api/buscaresposta": Method Not Allowed (Allow: POST) (uncaught exception) at /Users/steferson/Documents/Dropbox/3. Trabalho/hackfest/praquemreclamo/vendor/symfony/http-kernel/Symfony/Component/HttpKernel/EventListener/RouterListener.php line 148 {"exception":"[object] (Symfony\\Component\\HttpKernel\\Exception\\MethodNotAllowedHttpException: No route found for \"GET /api/buscaresposta\": Method Not Allowed (Allow: POST) at /Users/steferson/Documents/Dropbox/3. Trabalho/hackfest/praquemreclamo/vendor/symfony/http-kernel/Symfony/Component/HttpKernel/EventListener/RouterListener.php:148, Symfony\\Component\\Routing\\Exception\\MethodNotAllowedException:  at /Users/steferson/Documents/Dropbox/3. Trabalho/hackfest/praquemreclamo/vendor/symfony/routing/Symfony/Component/Routing/Matcher/UrlMatcher.php:95)"} {"clientIp":"10.0.0.106","token":"593d5ab3bea57"}
+[2017-06-11 16:58:59] silex-bootstrap.INFO: < 405 [] {"clientIp":"10.0.0.106","token":"593d5ab3bea57"}
+[2017-06-11 16:58:59] silex-bootstrap.DEBUG: Script executed in 37.499ms. {"msExecTime":37.499,"method":"GET","path":"/api/buscaresposta"} {"clientIp":"10.0.0.106","token":"593d5ab3bea57"}
+[2017-06-11 16:59:04] silex-bootstrap.INFO: Matched route "GET_api_getcategorias" (parameters: "_controller": "app.default_controller:getCategorias", "_route": "GET_api_getcategorias") [] {"clientIp":"10.0.0.107","token":"593d5ab81196b"}
+[2017-06-11 16:59:04] silex-bootstrap.INFO: > GET /api/getcategorias [] {"clientIp":"10.0.0.107","token":"593d5ab81196b"}
+[2017-06-11 16:59:53] silex-bootstrap.INFO: Matched route "GET_api_getcategorias" (parameters: "_controller": "app.default_controller:getCategorias", "_route": "GET_api_getcategorias") [] {"clientIp":"10.0.0.107","token":"593d5ae9b03f1"}
+[2017-06-11 16:59:53] silex-bootstrap.INFO: > GET /api/getcategorias [] {"clientIp":"10.0.0.107","token":"593d5ae9b03f1"}
+[2017-06-11 17:00:06] silex-bootstrap.INFO: Matched route "GET_api_getcategorias" (parameters: "_controller": "app.default_controller:getCategorias", "_route": "GET_api_getcategorias") [] {"clientIp":"10.0.0.107","token":"593d5af6475b8"}
+[2017-06-11 17:00:06] silex-bootstrap.INFO: > GET /api/getcategorias [] {"clientIp":"10.0.0.107","token":"593d5af6475b8"}
+[2017-06-11 17:00:06] silex-bootstrap.INFO: Matched route "GET_api_buscaresposta" (parameters: "_controller": "app.default_controller:getTrataPergunta", "_route": "GET_api_buscaresposta") [] {"clientIp":"10.0.0.106","token":"593d5af6ceac0"}
+[2017-06-11 17:00:06] silex-bootstrap.INFO: > GET /api/buscaresposta [] {"clientIp":"10.0.0.106","token":"593d5af6ceac0"}
+[2017-06-11 17:00:35] silex-bootstrap.INFO: Matched route "GET_api_getcategorias" (parameters: "_controller": "app.default_controller:getCategorias", "_route": "GET_api_getcategorias") [] {"clientIp":"10.0.0.107","token":"593d5b13b061e"}
+[2017-06-11 17:00:35] silex-bootstrap.INFO: > GET /api/getcategorias [] {"clientIp":"10.0.0.107","token":"593d5b13b061e"}
+[2017-06-11 17:00:46] silex-bootstrap.INFO: Matched route "GET_api_buscaresposta" (parameters: "_controller": "app.default_controller:getTrataPergunta", "_route": "GET_api_buscaresposta") [] {"clientIp":"10.0.0.106","token":"593d5b1eb0ea2"}
+[2017-06-11 17:00:46] silex-bootstrap.INFO: > GET /api/buscaresposta [] {"clientIp":"10.0.0.106","token":"593d5b1eb0ea2"}
+[2017-06-11 17:01:02] silex-bootstrap.INFO: Matched route "GET_api_buscaresposta" (parameters: "_controller": "app.default_controller:getTrataPergunta", "_route": "GET_api_buscaresposta") [] {"clientIp":"10.0.0.106","token":"593d5b2e1d351"}
+[2017-06-11 17:01:02] silex-bootstrap.INFO: > GET /api/buscaresposta [] {"clientIp":"10.0.0.106","token":"593d5b2e1d351"}
+[2017-06-11 17:01:09] silex-bootstrap.CRITICAL: GuzzleHttp\Exception\ClientException: Client error: `GET https://api.wit.ai/message` resulted in a `400 Bad Request` response:
+{"error":"Message is either too short or too long (max is 256)","code":"msg-invalid"}
+ (uncaught exception) at /Users/steferson/Documents/Dropbox/3. Trabalho/hackfest/praquemreclamo/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php line 111 {"exception":"[object] (GuzzleHttp\\Exception\\ClientException: Client error: `GET https://api.wit.ai/message` resulted in a `400 Bad Request` response:\n{\"error\":\"Message is either too short or too long (max is 256)\",\"code\":\"msg-invalid\"}\n at /Users/steferson/Documents/Dropbox/3. Trabalho/hackfest/praquemreclamo/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php:111)"} {"clientIp":"10.0.0.106","token":"593d5b2e1d351"}
+[2017-06-11 17:01:09] silex-bootstrap.INFO: < 500 [] {"clientIp":"10.0.0.106","token":"593d5b2e1d351"}
+[2017-06-11 17:01:09] silex-bootstrap.WARNING: Script executed in 7076.415ms. {"msExecTime":7076.415,"method":"GET","path":"/api/buscaresposta"} {"clientIp":"10.0.0.106","token":"593d5b2e1d351"}
+[2017-06-11 17:01:19] silex-bootstrap.INFO: Matched route "GET_api_getcategorias" (parameters: "_controller": "app.default_controller:getCategorias", "_route": "GET_api_getcategorias") [] {"clientIp":"10.0.0.107","token":"593d5b3f4b85a"}
+[2017-06-11 17:01:19] silex-bootstrap.INFO: > GET /api/getcategorias [] {"clientIp":"10.0.0.107","token":"593d5b3f4b85a"}
+[2017-06-11 17:01:20] silex-bootstrap.INFO: < 200 [] {"clientIp":"10.0.0.107","token":"593d5b3f4b85a"}
+[2017-06-11 17:01:20] silex-bootstrap.DEBUG: Script executed in 999.374ms. {"msExecTime":999.374,"method":"GET","path":"/api/getcategorias"} {"clientIp":"10.0.0.107","token":"593d5b3f4b85a"}
+[2017-06-11 17:02:03] silex-bootstrap.INFO: Matched route "GET_api_getcategorias" (parameters: "_controller": "app.default_controller:getCategorias", "_route": "GET_api_getcategorias") [] {"clientIp":"10.0.0.107","token":"593d5b6b9564b"}
+[2017-06-11 17:02:03] silex-bootstrap.INFO: > GET /api/getcategorias [] {"clientIp":"10.0.0.107","token":"593d5b6b9564b"}
+[2017-06-11 17:02:03] silex-bootstrap.INFO: < 200 [] {"clientIp":"10.0.0.107","token":"593d5b6b9564b"}
+[2017-06-11 17:02:03] silex-bootstrap.DEBUG: Script executed in 389.843ms. {"msExecTime":389.843,"method":"GET","path":"/api/getcategorias"} {"clientIp":"10.0.0.107","token":"593d5b6b9564b"}
+[2017-06-11 17:02:30] silex-bootstrap.INFO: Matched route "GET_api_getsubcategorias" (parameters: "_controller": "app.default_controller:getSubCategorias", "_route": "GET_api_getsubcategorias") [] {"clientIp":"10.0.0.107","token":"593d5b863fcbf"}
+[2017-06-11 17:02:30] silex-bootstrap.INFO: > GET /api/getsubcategorias [] {"clientIp":"10.0.0.107","token":"593d5b863fcbf"}
+[2017-06-11 17:02:30] silex-bootstrap.INFO: < 200 [] {"clientIp":"10.0.0.107","token":"593d5b863fcbf"}
+[2017-06-11 17:02:30] silex-bootstrap.DEBUG: Script executed in 288.865ms. {"msExecTime":288.865,"method":"GET","path":"/api/getsubcategorias"} {"clientIp":"10.0.0.107","token":"593d5b863fcbf"}
+[2017-06-11 17:02:30] silex-bootstrap.INFO: Matched route "GET_api_getcategorias" (parameters: "_controller": "app.default_controller:getCategorias", "_route": "GET_api_getcategorias") [] {"clientIp":"10.0.0.107","token":"593d5b8688c8a"}
+[2017-06-11 17:02:30] silex-bootstrap.INFO: > GET /api/getcategorias [] {"clientIp":"10.0.0.107","token":"593d5b8688c8a"}
+[2017-06-11 17:02:30] silex-bootstrap.INFO: < 200 [] {"clientIp":"10.0.0.107","token":"593d5b8688c8a"}
+[2017-06-11 17:02:30] silex-bootstrap.DEBUG: Script executed in 269.105ms. {"msExecTime":269.105,"method":"GET","path":"/api/getcategorias"} {"clientIp":"10.0.0.107","token":"593d5b8688c8a"}
+[2017-06-11 17:03:10] silex-bootstrap.INFO: Matched route "GET_api_getsubcategorias" (parameters: "_controller": "app.default_controller:getSubCategorias", "_route": "GET_api_getsubcategorias") [] {"clientIp":"10.0.0.107","token":"593d5bae4f6b3"}
+[2017-06-11 17:03:10] silex-bootstrap.INFO: > GET /api/getsubcategorias [] {"clientIp":"10.0.0.107","token":"593d5bae4f6b3"}
+[2017-06-11 17:03:10] silex-bootstrap.INFO: < 200 [] {"clientIp":"10.0.0.107","token":"593d5bae4f6b3"}
+[2017-06-11 17:03:10] silex-bootstrap.DEBUG: Script executed in 566.327ms. {"msExecTime":566.327,"method":"GET","path":"/api/getsubcategorias"} {"clientIp":"10.0.0.107","token":"593d5bae4f6b3"}
+[2017-06-11 17:03:10] silex-bootstrap.INFO: Matched route "GET_api_getcategorias" (parameters: "_controller": "app.default_controller:getCategorias", "_route": "GET_api_getcategorias") [] {"clientIp":"10.0.0.107","token":"593d5baedd424"}
+[2017-06-11 17:03:10] silex-bootstrap.INFO: > GET /api/getcategorias [] {"clientIp":"10.0.0.107","token":"593d5baedd424"}
+[2017-06-11 17:03:11] silex-bootstrap.INFO: < 200 [] {"clientIp":"10.0.0.107","token":"593d5baedd424"}
+[2017-06-11 17:03:11] silex-bootstrap.DEBUG: Script executed in 193.231ms. {"msExecTime":193.231,"method":"GET","path":"/api/getcategorias"} {"clientIp":"10.0.0.107","token":"593d5baedd424"}
+[2017-06-11 17:03:36] silex-bootstrap.INFO: Matched route "GET_api_getcategorias" (parameters: "_controller": "app.default_controller:getCategorias", "_route": "GET_api_getcategorias") [] {"clientIp":"10.0.0.107","token":"593d5bc899263"}
+[2017-06-11 17:03:36] silex-bootstrap.INFO: > GET /api/getcategorias [] {"clientIp":"10.0.0.107","token":"593d5bc899263"}
+[2017-06-11 17:03:36] silex-bootstrap.INFO: < 200 [] {"clientIp":"10.0.0.107","token":"593d5bc899263"}
+[2017-06-11 17:03:36] silex-bootstrap.DEBUG: Script executed in 117.452ms. {"msExecTime":117.452,"method":"GET","path":"/api/getcategorias"} {"clientIp":"10.0.0.107","token":"593d5bc899263"}
+[2017-06-11 17:03:59] silex-bootstrap.INFO: Matched route "GET_api_getcategorias" (parameters: "_controller": "app.default_controller:getCategorias", "_route": "GET_api_getcategorias") [] {"clientIp":"10.0.0.107","token":"593d5bdfc3b69"}
+[2017-06-11 17:03:59] silex-bootstrap.INFO: > GET /api/getcategorias [] {"clientIp":"10.0.0.107","token":"593d5bdfc3b69"}
+[2017-06-11 17:04:00] silex-bootstrap.INFO: < 200 [] {"clientIp":"10.0.0.107","token":"593d5bdfc3b69"}
+[2017-06-11 17:04:00] silex-bootstrap.INFO: Script executed in 1013.879ms. {"msExecTime":1013.879,"method":"GET","path":"/api/getcategorias"} {"clientIp":"10.0.0.107","token":"593d5bdfc3b69"}
+[2017-06-11 17:05:12] silex-bootstrap.INFO: Matched route "GET_api_getcategorias" (parameters: "_controller": "app.default_controller:getCategorias", "_route": "GET_api_getcategorias") [] {"clientIp":"10.0.0.107","token":"593d5c280a7db"}
+[2017-06-11 17:05:12] silex-bootstrap.INFO: > GET /api/getcategorias [] {"clientIp":"10.0.0.107","token":"593d5c280a7db"}
+[2017-06-11 17:05:12] silex-bootstrap.INFO: < 200 [] {"clientIp":"10.0.0.107","token":"593d5c280a7db"}
+[2017-06-11 17:05:12] silex-bootstrap.DEBUG: Script executed in 227.925ms. {"msExecTime":227.925,"method":"GET","path":"/api/getcategorias"} {"clientIp":"10.0.0.107","token":"593d5c280a7db"}
+[2017-06-11 17:05:15] silex-bootstrap.INFO: Matched route "GET_api_getsubcategorias" (parameters: "_controller": "app.default_controller:getSubCategorias", "_route": "GET_api_getsubcategorias") [] {"clientIp":"10.0.0.107","token":"593d5c2bc1b6c"}
+[2017-06-11 17:05:15] silex-bootstrap.INFO: > GET /api/getsubcategorias [] {"clientIp":"10.0.0.107","token":"593d5c2bc1b6c"}
+[2017-06-11 17:05:15] silex-bootstrap.INFO: < 200 [] {"clientIp":"10.0.0.107","token":"593d5c2bc1b6c"}
+[2017-06-11 17:05:15] silex-bootstrap.DEBUG: Script executed in 218.723ms. {"msExecTime":218.723,"method":"GET","path":"/api/getsubcategorias"} {"clientIp":"10.0.0.107","token":"593d5c2bc1b6c"}
+[2017-06-11 17:06:36] silex-bootstrap.INFO: Matched route "GET_api_getcategorias" (parameters: "_controller": "app.default_controller:getCategorias", "_route": "GET_api_getcategorias") [] {"clientIp":"10.0.0.107","token":"593d5c7cb12c3"}
+[2017-06-11 17:06:36] silex-bootstrap.INFO: > GET /api/getcategorias [] {"clientIp":"10.0.0.107","token":"593d5c7cb12c3"}
+[2017-06-11 17:06:39] silex-bootstrap.INFO: < 200 [] {"clientIp":"10.0.0.107","token":"593d5c7cb12c3"}
+[2017-06-11 17:06:39] silex-bootstrap.INFO: Script executed in 2752.734ms. {"msExecTime":2752.734,"method":"GET","path":"/api/getcategorias"} {"clientIp":"10.0.0.107","token":"593d5c7cb12c3"}
+[2017-06-11 17:06:41] silex-bootstrap.INFO: Matched route "GET_api_getsubcategorias" (parameters: "_controller": "app.default_controller:getSubCategorias", "_route": "GET_api_getsubcategorias") [] {"clientIp":"10.0.0.107","token":"593d5c815711c"}
+[2017-06-11 17:06:41] silex-bootstrap.INFO: > GET /api/getsubcategorias [] {"clientIp":"10.0.0.107","token":"593d5c815711c"}
+[2017-06-11 17:06:41] silex-bootstrap.INFO: < 200 [] {"clientIp":"10.0.0.107","token":"593d5c815711c"}
+[2017-06-11 17:06:41] silex-bootstrap.DEBUG: Script executed in 614.585ms. {"msExecTime":614.585,"method":"GET","path":"/api/getsubcategorias"} {"clientIp":"10.0.0.107","token":"593d5c815711c"}
+[2017-06-11 17:07:15] silex-bootstrap.INFO: Matched route "GET_api_getcategorias" (parameters: "_controller": "app.default_controller:getCategorias", "_route": "GET_api_getcategorias") [] {"clientIp":"10.0.0.107","token":"593d5ca384a5a"}
+[2017-06-11 17:07:15] silex-bootstrap.INFO: > GET /api/getcategorias [] {"clientIp":"10.0.0.107","token":"593d5ca384a5a"}
+[2017-06-11 17:07:16] silex-bootstrap.INFO: < 200 [] {"clientIp":"10.0.0.107","token":"593d5ca384a5a"}
+[2017-06-11 17:07:16] silex-bootstrap.DEBUG: Script executed in 786.795ms. {"msExecTime":786.795,"method":"GET","path":"/api/getcategorias"} {"clientIp":"10.0.0.107","token":"593d5ca384a5a"}
+[2017-06-11 17:08:07] silex-bootstrap.INFO: Matched route "GET_api_getcategorias" (parameters: "_controller": "app.default_controller:getCategorias", "_route": "GET_api_getcategorias") [] {"clientIp":"10.0.0.107","token":"593d5cd7c0530"}
+[2017-06-11 17:08:07] silex-bootstrap.INFO: > GET /api/getcategorias [] {"clientIp":"10.0.0.107","token":"593d5cd7c0530"}
+[2017-06-11 17:08:09] silex-bootstrap.INFO: < 200 [] {"clientIp":"10.0.0.107","token":"593d5cd7c0530"}
+[2017-06-11 17:08:09] silex-bootstrap.INFO: Script executed in 1244.126ms. {"msExecTime":1244.126,"method":"GET","path":"/api/getcategorias"} {"clientIp":"10.0.0.107","token":"593d5cd7c0530"}
+[2017-06-11 17:08:09] silex-bootstrap.INFO: Matched route "GET_api_getsubcategorias" (parameters: "_controller": "app.default_controller:getSubCategorias", "_route": "GET_api_getsubcategorias") [] {"clientIp":"10.0.0.107","token":"593d5cd9ea086"}
+[2017-06-11 17:08:09] silex-bootstrap.INFO: > GET /api/getsubcategorias [] {"clientIp":"10.0.0.107","token":"593d5cd9ea086"}
+[2017-06-11 17:08:12] silex-bootstrap.INFO: < 200 [] {"clientIp":"10.0.0.107","token":"593d5cd9ea086"}
+[2017-06-11 17:08:12] silex-bootstrap.INFO: Script executed in 2135.826ms. {"msExecTime":2135.826,"method":"GET","path":"/api/getsubcategorias"} {"clientIp":"10.0.0.107","token":"593d5cd9ea086"}
+[2017-06-11 17:08:39] silex-bootstrap.INFO: Matched route "GET_api_getcategorias" (parameters: "_controller": "app.default_controller:getCategorias", "_route": "GET_api_getcategorias") [] {"clientIp":"10.0.0.107","token":"593d5cf732318"}
+[2017-06-11 17:08:39] silex-bootstrap.INFO: > GET /api/getcategorias [] {"clientIp":"10.0.0.107","token":"593d5cf732318"}
+[2017-06-11 17:08:39] silex-bootstrap.INFO: < 200 [] {"clientIp":"10.0.0.107","token":"593d5cf732318"}
+[2017-06-11 17:08:39] silex-bootstrap.DEBUG: Script executed in 520.98ms. {"msExecTime":520.98,"method":"GET","path":"/api/getcategorias"} {"clientIp":"10.0.0.107","token":"593d5cf732318"}
+[2017-06-11 17:08:42] silex-bootstrap.INFO: Matched route "GET_api_getsubcategorias" (parameters: "_controller": "app.default_controller:getSubCategorias", "_route": "GET_api_getsubcategorias") [] {"clientIp":"10.0.0.107","token":"593d5cfa40f26"}
+[2017-06-11 17:08:42] silex-bootstrap.INFO: > GET /api/getsubcategorias [] {"clientIp":"10.0.0.107","token":"593d5cfa40f26"}
+[2017-06-11 17:08:42] silex-bootstrap.INFO: < 200 [] {"clientIp":"10.0.0.107","token":"593d5cfa40f26"}
+[2017-06-11 17:08:42] silex-bootstrap.DEBUG: Script executed in 258.991ms. {"msExecTime":258.991,"method":"GET","path":"/api/getsubcategorias"} {"clientIp":"10.0.0.107","token":"593d5cfa40f26"}
+[2017-06-11 17:09:15] silex-bootstrap.INFO: Matched route "GET_api_getcategorias" (parameters: "_controller": "app.default_controller:getCategorias", "_route": "GET_api_getcategorias") [] {"clientIp":"10.0.0.107","token":"593d5d1b498de"}
+[2017-06-11 17:09:15] silex-bootstrap.INFO: > GET /api/getcategorias [] {"clientIp":"10.0.0.107","token":"593d5d1b498de"}
+[2017-06-11 17:09:16] silex-bootstrap.INFO: < 200 [] {"clientIp":"10.0.0.107","token":"593d5d1b498de"}
+[2017-06-11 17:09:16] silex-bootstrap.DEBUG: Script executed in 823.878ms. {"msExecTime":823.878,"method":"GET","path":"/api/getcategorias"} {"clientIp":"10.0.0.107","token":"593d5d1b498de"}
+[2017-06-11 17:09:38] silex-bootstrap.INFO: Matched route "GET_api_getcategorias" (parameters: "_controller": "app.default_controller:getCategorias", "_route": "GET_api_getcategorias") [] {"clientIp":"10.0.0.107","token":"593d5d32866eb"}
+[2017-06-11 17:09:38] silex-bootstrap.INFO: > GET /api/getcategorias [] {"clientIp":"10.0.0.107","token":"593d5d32866eb"}
+[2017-06-11 17:09:40] silex-bootstrap.INFO: < 200 [] {"clientIp":"10.0.0.107","token":"593d5d32866eb"}
+[2017-06-11 17:09:40] silex-bootstrap.INFO: Script executed in 2053.271ms. {"msExecTime":2053.271,"method":"GET","path":"/api/getcategorias"} {"clientIp":"10.0.0.107","token":"593d5d32866eb"}
+[2017-06-11 17:09:42] silex-bootstrap.INFO: Matched route "GET_api_getsubcategorias" (parameters: "_controller": "app.default_controller:getSubCategorias", "_route": "GET_api_getsubcategorias") [] {"clientIp":"10.0.0.107","token":"593d5d367c0da"}
+[2017-06-11 17:09:42] silex-bootstrap.INFO: > GET /api/getsubcategorias [] {"clientIp":"10.0.0.107","token":"593d5d367c0da"}
+[2017-06-11 17:09:45] silex-bootstrap.INFO: < 200 [] {"clientIp":"10.0.0.107","token":"593d5d367c0da"}
+[2017-06-11 17:09:45] silex-bootstrap.INFO: Script executed in 2635.76ms. {"msExecTime":2635.76,"method":"GET","path":"/api/getsubcategorias"} {"clientIp":"10.0.0.107","token":"593d5d367c0da"}
+[2017-06-11 17:09:49] silex-bootstrap.INFO: Matched route "GET_api_" (parameters: "_controller": "app.default_controller:indexReclamacao", "_route": "GET_api_") [] {"clientIp":"10.0.0.106","token":"593d5d3d23fa0"}
+[2017-06-11 17:09:49] silex-bootstrap.INFO: > GET /api/ [] {"clientIp":"10.0.0.106","token":"593d5d3d23fa0"}
+[2017-06-11 17:09:53] silex-bootstrap.INFO: < 200 [] {"clientIp":"10.0.0.106","token":"593d5d3d23fa0"}
+[2017-06-11 17:09:53] silex-bootstrap.INFO: Script executed in 4613.943ms. {"msExecTime":4613.943,"method":"GET","path":"/api/"} {"clientIp":"10.0.0.106","token":"593d5d3d23fa0"}
+[2017-06-11 17:09:53] silex-bootstrap.INFO: Matched route "GET_api_getcategorias" (parameters: "_controller": "app.default_controller:getCategorias", "_route": "GET_api_getcategorias") [] {"clientIp":"10.0.0.107","token":"593d5d41e2156"}
+[2017-06-11 17:09:53] silex-bootstrap.INFO: > GET /api/getcategorias [] {"clientIp":"10.0.0.107","token":"593d5d41e2156"}
+[2017-06-11 17:10:01] silex-bootstrap.INFO: < 200 [] {"clientIp":"10.0.0.107","token":"593d5d41e2156"}
+[2017-06-11 17:10:01] silex-bootstrap.WARNING: Script executed in 7417.644ms. {"msExecTime":7417.644,"method":"GET","path":"/api/getcategorias"} {"clientIp":"10.0.0.107","token":"593d5d41e2156"}
+[2017-06-11 17:10:01] silex-bootstrap.INFO: Matched route "GET_api_getsubcategorias" (parameters: "_controller": "app.default_controller:getSubCategorias", "_route": "GET_api_getsubcategorias") [] {"clientIp":"10.0.0.107","token":"593d5d495548f"}
+[2017-06-11 17:10:01] silex-bootstrap.INFO: > GET /api/getsubcategorias [] {"clientIp":"10.0.0.107","token":"593d5d495548f"}
+[2017-06-11 17:10:03] silex-bootstrap.INFO: < 200 [] {"clientIp":"10.0.0.107","token":"593d5d495548f"}
+[2017-06-11 17:10:03] silex-bootstrap.INFO: Script executed in 2432.877ms. {"msExecTime":2432.877,"method":"GET","path":"/api/getsubcategorias"} {"clientIp":"10.0.0.107","token":"593d5d495548f"}
+[2017-06-11 17:10:20] silex-bootstrap.INFO: Matched route "GET_api_perguntas_idsubcat" (parameters: "_controller": "app.default_controller:getPerguntas", "idsubcat": "2", "_route": "GET_api_perguntas_idsubcat") [] {"clientIp":"10.0.0.106","token":"593d5d5c4e6ab"}
+[2017-06-11 17:10:20] silex-bootstrap.INFO: > GET /api/perguntas/2 [] {"clientIp":"10.0.0.106","token":"593d5d5c4e6ab"}
+[2017-06-11 17:10:20] silex-bootstrap.CRITICAL: Symfony\Component\Debug\Exception\DummyException:  (uncaught exception) at /Users/steferson/Documents/Dropbox/3. Trabalho/hackfest/praquemreclamo/vendor/symfony/debug/Symfony/Component/Debug/ErrorHandler.php line 174 {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\DummyException:  at /Users/steferson/Documents/Dropbox/3. Trabalho/hackfest/praquemreclamo/vendor/symfony/debug/Symfony/Component/Debug/ErrorHandler.php:174)"} {"clientIp":"10.0.0.106","token":"593d5d5c4e6ab"}
+[2017-06-11 17:10:20] silex-bootstrap.INFO: < 500 [] {"clientIp":"10.0.0.106","token":"593d5d5c4e6ab"}
+[2017-06-11 17:10:20] silex-bootstrap.DEBUG: Script executed in 269.992ms. {"msExecTime":269.992,"method":"GET","path":"/api/perguntas/2"} {"clientIp":"10.0.0.106","token":"593d5d5c4e6ab"}
+[2017-06-11 17:10:37] silex-bootstrap.INFO: Matched route "GET_api_perguntas_idsubcat" (parameters: "_controller": "app.default_controller:getPerguntas", "idsubcat": "2", "_route": "GET_api_perguntas_idsubcat") [] {"clientIp":"10.0.0.106","token":"593d5d6dae3dd"}
+[2017-06-11 17:10:37] silex-bootstrap.INFO: > GET /api/perguntas/2 [] {"clientIp":"10.0.0.106","token":"593d5d6dae3dd"}
+[2017-06-11 17:10:37] silex-bootstrap.CRITICAL: Symfony\Component\Debug\Exception\DummyException:  (uncaught exception) at /Users/steferson/Documents/Dropbox/3. Trabalho/hackfest/praquemreclamo/vendor/symfony/debug/Symfony/Component/Debug/ErrorHandler.php line 174 {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\DummyException:  at /Users/steferson/Documents/Dropbox/3. Trabalho/hackfest/praquemreclamo/vendor/symfony/debug/Symfony/Component/Debug/ErrorHandler.php:174)"} {"clientIp":"10.0.0.106","token":"593d5d6dae3dd"}
+[2017-06-11 17:10:37] silex-bootstrap.INFO: < 500 [] {"clientIp":"10.0.0.106","token":"593d5d6dae3dd"}
+[2017-06-11 17:10:37] silex-bootstrap.DEBUG: Script executed in 256.137ms. {"msExecTime":256.137,"method":"GET","path":"/api/perguntas/2"} {"clientIp":"10.0.0.106","token":"593d5d6dae3dd"}
+[2017-06-11 17:10:55] silex-bootstrap.INFO: Matched route "GET_api_perguntas_idsubcat" (parameters: "_controller": "app.default_controller:getPerguntas", "idsubcat": "2", "_route": "GET_api_perguntas_idsubcat") [] {"clientIp":"10.0.0.106","token":"593d5d7f0eec1"}
+[2017-06-11 17:10:55] silex-bootstrap.INFO: > GET /api/perguntas/2 [] {"clientIp":"10.0.0.106","token":"593d5d7f0eec1"}
+[2017-06-11 17:10:55] silex-bootstrap.INFO: < 200 [] {"clientIp":"10.0.0.106","token":"593d5d7f0eec1"}
+[2017-06-11 17:10:55] silex-bootstrap.DEBUG: Script executed in 442.77ms. {"msExecTime":442.77,"method":"GET","path":"/api/perguntas/2"} {"clientIp":"10.0.0.106","token":"593d5d7f0eec1"}
+[2017-06-11 17:11:36] silex-bootstrap.INFO: Matched route "GET_api_getcategorias" (parameters: "_controller": "app.default_controller:getCategorias", "_route": "GET_api_getcategorias") [] {"clientIp":"10.0.0.107","token":"593d5da810530"}
+[2017-06-11 17:11:36] silex-bootstrap.INFO: > GET /api/getcategorias [] {"clientIp":"10.0.0.107","token":"593d5da810530"}
+[2017-06-11 17:11:39] silex-bootstrap.INFO: < 200 [] {"clientIp":"10.0.0.107","token":"593d5da810530"}
+[2017-06-11 17:11:39] silex-bootstrap.INFO: Script executed in 2984.666ms. {"msExecTime":2984.666,"method":"GET","path":"/api/getcategorias"} {"clientIp":"10.0.0.107","token":"593d5da810530"}
+[2017-06-11 17:11:42] silex-bootstrap.INFO: Matched route "GET_api_getcategorias" (parameters: "_controller": "app.default_controller:getCategorias", "_route": "GET_api_getcategorias") [] {"clientIp":"10.0.0.107","token":"593d5dae005bc"}
+[2017-06-11 17:11:42] silex-bootstrap.INFO: > GET /api/getcategorias [] {"clientIp":"10.0.0.107","token":"593d5dae005bc"}
+[2017-06-11 17:11:42] silex-bootstrap.INFO: < 200 [] {"clientIp":"10.0.0.107","token":"593d5dae005bc"}
+[2017-06-11 17:11:42] silex-bootstrap.DEBUG: Script executed in 702.06ms. {"msExecTime":702.06,"method":"GET","path":"/api/getcategorias"} {"clientIp":"10.0.0.107","token":"593d5dae005bc"}
+[2017-06-11 17:11:52] silex-bootstrap.INFO: Matched route "GET_api_getcategorias" (parameters: "_controller": "app.default_controller:getCategorias", "_route": "GET_api_getcategorias") [] {"clientIp":"10.0.0.107","token":"593d5db836068"}
+[2017-06-11 17:11:52] silex-bootstrap.INFO: > GET /api/getcategorias [] {"clientIp":"10.0.0.107","token":"593d5db836068"}
+[2017-06-11 17:11:52] silex-bootstrap.INFO: < 200 [] {"clientIp":"10.0.0.107","token":"593d5db836068"}
+[2017-06-11 17:11:52] silex-bootstrap.DEBUG: Script executed in 246.441ms. {"msExecTime":246.441,"method":"GET","path":"/api/getcategorias"} {"clientIp":"10.0.0.107","token":"593d5db836068"}
+[2017-06-11 17:12:08] silex-bootstrap.INFO: Matched route "GET_api_getcategorias" (parameters: "_controller": "app.default_controller:getCategorias", "_route": "GET_api_getcategorias") [] {"clientIp":"10.0.0.107","token":"593d5dc81391a"}
+[2017-06-11 17:12:08] silex-bootstrap.INFO: > GET /api/getcategorias [] {"clientIp":"10.0.0.107","token":"593d5dc81391a"}
+[2017-06-11 17:12:08] silex-bootstrap.INFO: < 200 [] {"clientIp":"10.0.0.107","token":"593d5dc81391a"}
+[2017-06-11 17:12:08] silex-bootstrap.DEBUG: Script executed in 153.371ms. {"msExecTime":153.371,"method":"GET","path":"/api/getcategorias"} {"clientIp":"10.0.0.107","token":"593d5dc81391a"}
+[2017-06-11 17:12:10] silex-bootstrap.INFO: Matched route "GET_api_getsubcategorias" (parameters: "_controller": "app.default_controller:getSubCategorias", "_route": "GET_api_getsubcategorias") [] {"clientIp":"10.0.0.107","token":"593d5dca82c5a"}
+[2017-06-11 17:12:10] silex-bootstrap.INFO: > GET /api/getsubcategorias [] {"clientIp":"10.0.0.107","token":"593d5dca82c5a"}
+[2017-06-11 17:12:10] silex-bootstrap.INFO: < 200 [] {"clientIp":"10.0.0.107","token":"593d5dca82c5a"}
+[2017-06-11 17:12:10] silex-bootstrap.DEBUG: Script executed in 199.778ms. {"msExecTime":199.778,"method":"GET","path":"/api/getsubcategorias"} {"clientIp":"10.0.0.107","token":"593d5dca82c5a"}
+[2017-06-11 17:13:02] silex-bootstrap.INFO: Matched route "GET_api_getcategorias" (parameters: "_controller": "app.default_controller:getCategorias", "_route": "GET_api_getcategorias") [] {"clientIp":"10.0.0.107","token":"593d5dfe594f9"}
+[2017-06-11 17:13:02] silex-bootstrap.INFO: > GET /api/getcategorias [] {"clientIp":"10.0.0.107","token":"593d5dfe594f9"}
+[2017-06-11 17:13:03] silex-bootstrap.INFO: < 200 [] {"clientIp":"10.0.0.107","token":"593d5dfe594f9"}
+[2017-06-11 17:13:03] silex-bootstrap.INFO: Script executed in 1065.159ms. {"msExecTime":1065.159,"method":"GET","path":"/api/getcategorias"} {"clientIp":"10.0.0.107","token":"593d5dfe594f9"}
+[2017-06-11 17:13:18] silex-bootstrap.INFO: Matched route "GET_api_getsubcategorias" (parameters: "_controller": "app.default_controller:getSubCategorias", "_route": "GET_api_getsubcategorias") [] {"clientIp":"10.0.0.107","token":"593d5e0ee7164"}
+[2017-06-11 17:13:18] silex-bootstrap.INFO: > GET /api/getsubcategorias [] {"clientIp":"10.0.0.107","token":"593d5e0ee7164"}
+[2017-06-11 17:13:19] silex-bootstrap.INFO: < 200 [] {"clientIp":"10.0.0.107","token":"593d5e0ee7164"}
+[2017-06-11 17:13:19] silex-bootstrap.DEBUG: Script executed in 344.751ms. {"msExecTime":344.751,"method":"GET","path":"/api/getsubcategorias"} {"clientIp":"10.0.0.107","token":"593d5e0ee7164"}
+[2017-06-11 17:13:24] silex-bootstrap.INFO: Matched route "GET_api_getcategorias" (parameters: "_controller": "app.default_controller:getCategorias", "_route": "GET_api_getcategorias") [] {"clientIp":"10.0.0.107","token":"593d5e141779c"}
+[2017-06-11 17:13:24] silex-bootstrap.INFO: > GET /api/getcategorias [] {"clientIp":"10.0.0.107","token":"593d5e141779c"}
+[2017-06-11 17:13:24] silex-bootstrap.INFO: < 200 [] {"clientIp":"10.0.0.107","token":"593d5e141779c"}
+[2017-06-11 17:13:24] silex-bootstrap.DEBUG: Script executed in 233.237ms. {"msExecTime":233.237,"method":"GET","path":"/api/getcategorias"} {"clientIp":"10.0.0.107","token":"593d5e141779c"}
+[2017-06-11 17:13:26] silex-bootstrap.INFO: Matched route "GET_api_getsubcategorias" (parameters: "_controller": "app.default_controller:getSubCategorias", "_route": "GET_api_getsubcategorias") [] {"clientIp":"10.0.0.107","token":"593d5e1668100"}
+[2017-06-11 17:13:26] silex-bootstrap.INFO: > GET /api/getsubcategorias [] {"clientIp":"10.0.0.107","token":"593d5e1668100"}
+[2017-06-11 17:13:27] silex-bootstrap.INFO: < 200 [] {"clientIp":"10.0.0.107","token":"593d5e1668100"}
+[2017-06-11 17:13:27] silex-bootstrap.DEBUG: Script executed in 926.168ms. {"msExecTime":926.168,"method":"GET","path":"/api/getsubcategorias"} {"clientIp":"10.0.0.107","token":"593d5e1668100"}
+[2017-06-11 17:14:01] silex-bootstrap.INFO: Matched route "GET_api_getcategorias" (parameters: "_controller": "app.default_controller:getCategorias", "_route": "GET_api_getcategorias") [] {"clientIp":"10.0.0.107","token":"593d5e39ec888"}
+[2017-06-11 17:14:01] silex-bootstrap.INFO: > GET /api/getcategorias [] {"clientIp":"10.0.0.107","token":"593d5e39ec888"}
+[2017-06-11 17:14:02] silex-bootstrap.INFO: < 200 [] {"clientIp":"10.0.0.107","token":"593d5e39ec888"}
+[2017-06-11 17:14:02] silex-bootstrap.DEBUG: Script executed in 282.461ms. {"msExecTime":282.461,"method":"GET","path":"/api/getcategorias"} {"clientIp":"10.0.0.107","token":"593d5e39ec888"}
+[2017-06-11 17:14:02] silex-bootstrap.INFO: Matched route "GET_api_getsubcategorias" (parameters: "_controller": "app.default_controller:getSubCategorias", "_route": "GET_api_getsubcategorias") [] {"clientIp":"10.0.0.107","token":"593d5e3aeb92f"}
+[2017-06-11 17:14:02] silex-bootstrap.INFO: > GET /api/getsubcategorias [] {"clientIp":"10.0.0.107","token":"593d5e3aeb92f"}
+[2017-06-11 17:14:03] silex-bootstrap.INFO: < 200 [] {"clientIp":"10.0.0.107","token":"593d5e3aeb92f"}
+[2017-06-11 17:14:03] silex-bootstrap.DEBUG: Script executed in 158.818ms. {"msExecTime":158.818,"method":"GET","path":"/api/getsubcategorias"} {"clientIp":"10.0.0.107","token":"593d5e3aeb92f"}
+[2017-06-11 17:14:04] silex-bootstrap.INFO: Matched route "GET_api_getcategorias" (parameters: "_controller": "app.default_controller:getCategorias", "_route": "GET_api_getcategorias") [] {"clientIp":"10.0.0.107","token":"593d5e3c19218"}
+[2017-06-11 17:14:04] silex-bootstrap.INFO: > GET /api/getcategorias [] {"clientIp":"10.0.0.107","token":"593d5e3c19218"}
+[2017-06-11 17:14:04] silex-bootstrap.INFO: < 200 [] {"clientIp":"10.0.0.107","token":"593d5e3c19218"}
+[2017-06-11 17:14:04] silex-bootstrap.DEBUG: Script executed in 243.503ms. {"msExecTime":243.503,"method":"GET","path":"/api/getcategorias"} {"clientIp":"10.0.0.107","token":"593d5e3c19218"}
+[2017-06-11 17:14:05] silex-bootstrap.INFO: Matched route "GET_api_getsubcategorias" (parameters: "_controller": "app.default_controller:getSubCategorias", "_route": "GET_api_getsubcategorias") [] {"clientIp":"10.0.0.107","token":"593d5e3d250a8"}
+[2017-06-11 17:14:05] silex-bootstrap.INFO: > GET /api/getsubcategorias [] {"clientIp":"10.0.0.107","token":"593d5e3d250a8"}
+[2017-06-11 17:14:05] silex-bootstrap.INFO: < 200 [] {"clientIp":"10.0.0.107","token":"593d5e3d250a8"}
+[2017-06-11 17:14:05] silex-bootstrap.DEBUG: Script executed in 206.385ms. {"msExecTime":206.385,"method":"GET","path":"/api/getsubcategorias"} {"clientIp":"10.0.0.107","token":"593d5e3d250a8"}
+[2017-06-11 17:16:24] silex-bootstrap.INFO: Matched route "GET_api_getcategorias" (parameters: "_controller": "app.default_controller:getCategorias", "_route": "GET_api_getcategorias") [] {"clientIp":"10.0.0.102","token":"593d5ec87de8d"}
+[2017-06-11 17:16:24] silex-bootstrap.INFO: > GET /api/getcategorias [] {"clientIp":"10.0.0.102","token":"593d5ec87de8d"}
+[2017-06-11 17:16:25] silex-bootstrap.INFO: < 200 [] {"clientIp":"10.0.0.102","token":"593d5ec87de8d"}
+[2017-06-11 17:16:25] silex-bootstrap.INFO: Script executed in 1110.141ms. {"msExecTime":1110.141,"method":"GET","path":"/api/getcategorias"} {"clientIp":"10.0.0.102","token":"593d5ec87de8d"}
+[2017-06-11 17:16:27] silex-bootstrap.INFO: Matched route "GET_api_getsubcategorias" (parameters: "_controller": "app.default_controller:getSubCategorias", "_route": "GET_api_getsubcategorias") [] {"clientIp":"10.0.0.102","token":"593d5ecb15905"}
+[2017-06-11 17:16:27] silex-bootstrap.INFO: > GET /api/getsubcategorias [] {"clientIp":"10.0.0.102","token":"593d5ecb15905"}
+[2017-06-11 17:16:27] silex-bootstrap.INFO: < 200 [] {"clientIp":"10.0.0.102","token":"593d5ecb15905"}
+[2017-06-11 17:16:27] silex-bootstrap.DEBUG: Script executed in 240.819ms. {"msExecTime":240.819,"method":"GET","path":"/api/getsubcategorias"} {"clientIp":"10.0.0.102","token":"593d5ecb15905"}
+[2017-06-11 17:16:58] silex-bootstrap.INFO: Matched route "GET_api_getsubcategorias" (parameters: "_controller": "app.default_controller:getSubCategorias", "_route": "GET_api_getsubcategorias") [] {"clientIp":"10.0.0.102","token":"593d5eea3c659"}
+[2017-06-11 17:16:58] silex-bootstrap.INFO: > GET /api/getsubcategorias [] {"clientIp":"10.0.0.102","token":"593d5eea3c659"}
+[2017-06-11 17:16:58] silex-bootstrap.INFO: < 200 [] {"clientIp":"10.0.0.102","token":"593d5eea3c659"}
+[2017-06-11 17:16:58] silex-bootstrap.DEBUG: Script executed in 115.952ms. {"msExecTime":115.952,"method":"GET","path":"/api/getsubcategorias"} {"clientIp":"10.0.0.102","token":"593d5eea3c659"}
+[2017-06-11 17:17:04] silex-bootstrap.INFO: Matched route "POST_api_buscaresposta" (parameters: "_controller": "app.default_controller:getTrataPergunta", "_route": "POST_api_buscaresposta") [] {"clientIp":"10.0.0.106","token":"593d5ef064491"}
+[2017-06-11 17:17:04] silex-bootstrap.INFO: > POST /api/buscaresposta [] {"clientIp":"10.0.0.106","token":"593d5ef064491"}
+[2017-06-11 17:17:05] silex-bootstrap.CRITICAL: GuzzleHttp\Exception\ClientException: Client error: `GET https://api.wit.ai/message?q=GOSTARIA%20DE%20DENUCIAR%20UMA%20FRAUDE%20E%20CRIME%20DE%20ESTELIONATO%20PRATICADA%20CONTRA%20A%20PREVIDENCIA%20DO%20ESTADO%20DO%20MARANHAO%2C%20A%20APOSENTADA%20IEDA%20BATISTA%20FEITOSA%20%20LIMA%2C%20%C3%89%20FALECIDA%20DESDE%20MAIO%20DE%202013%2C%20POREM%20SUA%20FILA%20A%20SENHORA%20KATIA%20MARIA%20FEITOSA%20QUEIROZ%20%2C%20DETENTORA%20DE%20CFP%3A23803584353%2C%20` resulted in a `400 Bad Request` response:
+{"error":"Message is either too short or too long (max is 256)","code":"msg-invalid"}
+ (uncaught exception) at /Users/steferson/Documents/Dropbox/3. Trabalho/hackfest/praquemreclamo/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php line 111 {"exception":"[object] (GuzzleHttp\\Exception\\ClientException: Client error: `GET https://api.wit.ai/message?q=GOSTARIA%20DE%20DENUCIAR%20UMA%20FRAUDE%20E%20CRIME%20DE%20ESTELIONATO%20PRATICADA%20CONTRA%20A%20PREVIDENCIA%20DO%20ESTADO%20DO%20MARANHAO%2C%20A%20APOSENTADA%20IEDA%20BATISTA%20FEITOSA%20%20LIMA%2C%20%C3%89%20FALECIDA%20DESDE%20MAIO%20DE%202013%2C%20POREM%20SUA%20FILA%20A%20SENHORA%20KATIA%20MARIA%20FEITOSA%20QUEIROZ%20%2C%20DETENTORA%20DE%20CFP%3A23803584353%2C%20` resulted in a `400 Bad Request` response:\n{\"error\":\"Message is either too short or too long (max is 256)\",\"code\":\"msg-invalid\"}\n at /Users/steferson/Documents/Dropbox/3. Trabalho/hackfest/praquemreclamo/vendor/guzzlehttp/guzzle/src/Exception/RequestException.php:111)"} {"clientIp":"10.0.0.106","token":"593d5ef064491"}
+[2017-06-11 17:17:05] silex-bootstrap.INFO: < 500 [] {"clientIp":"10.0.0.106","token":"593d5ef064491"}
+[2017-06-11 17:17:05] silex-bootstrap.INFO: Script executed in 1089.377ms. {"msExecTime":1089.377,"method":"POST","path":"/api/buscaresposta"} {"clientIp":"10.0.0.106","token":"593d5ef064491"}
+[2017-06-11 17:18:05] silex-bootstrap.INFO: Matched route "POST_api_buscaresposta" (parameters: "_controller": "app.default_controller:getTrataPergunta", "_route": "POST_api_buscaresposta") [] {"clientIp":"10.0.0.106","token":"593d5f2dc8311"}
+[2017-06-11 17:18:05] silex-bootstrap.INFO: > POST /api/buscaresposta [] {"clientIp":"10.0.0.106","token":"593d5f2dc8311"}
+[2017-06-11 17:18:06] silex-bootstrap.CRITICAL: Symfony\Component\Debug\Exception\DummyException:  (uncaught exception) at /Users/steferson/Documents/Dropbox/3. Trabalho/hackfest/praquemreclamo/vendor/symfony/debug/Symfony/Component/Debug/ErrorHandler.php line 174 {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\DummyException:  at /Users/steferson/Documents/Dropbox/3. Trabalho/hackfest/praquemreclamo/vendor/symfony/debug/Symfony/Component/Debug/ErrorHandler.php:174)"} {"clientIp":"10.0.0.106","token":"593d5f2dc8311"}
+[2017-06-11 17:18:06] silex-bootstrap.INFO: < 500 [] {"clientIp":"10.0.0.106","token":"593d5f2dc8311"}
+[2017-06-11 17:18:06] silex-bootstrap.INFO: Script executed in 1027.623ms. {"msExecTime":1027.623,"method":"POST","path":"/api/buscaresposta"} {"clientIp":"10.0.0.106","token":"593d5f2dc8311"}
+[2017-06-11 17:19:24] silex-bootstrap.INFO: Matched route "POST_api_buscaresposta" (parameters: "_controller": "app.default_controller:getTrataPergunta", "_route": "POST_api_buscaresposta") [] {"clientIp":"10.0.0.106","token":"593d5f7c80245"}
+[2017-06-11 17:19:24] silex-bootstrap.INFO: > POST /api/buscaresposta [] {"clientIp":"10.0.0.106","token":"593d5f7c80245"}
+[2017-06-11 17:19:26] silex-bootstrap.INFO: < 200 [] {"clientIp":"10.0.0.106","token":"593d5f7c80245"}
+[2017-06-11 17:19:26] silex-bootstrap.INFO: Script executed in 1589.255ms. {"msExecTime":1589.255,"method":"POST","path":"/api/buscaresposta"} {"clientIp":"10.0.0.106","token":"593d5f7c80245"}
+[2017-06-11 17:21:05] silex-bootstrap.INFO: Matched route "POST_api_buscaresposta" (parameters: "_controller": "app.default_controller:getTrataPergunta", "_route": "POST_api_buscaresposta") [] {"clientIp":"10.0.0.106","token":"593d5fe129f05"}
+[2017-06-11 17:21:05] silex-bootstrap.INFO: > POST /api/buscaresposta [] {"clientIp":"10.0.0.106","token":"593d5fe129f05"}
+[2017-06-11 17:21:06] silex-bootstrap.INFO: < 200 [] {"clientIp":"10.0.0.106","token":"593d5fe129f05"}
+[2017-06-11 17:21:06] silex-bootstrap.INFO: Script executed in 1187.42ms. {"msExecTime":1187.42,"method":"POST","path":"/api/buscaresposta"} {"clientIp":"10.0.0.106","token":"593d5fe129f05"}
+[2017-06-11 17:21:42] silex-bootstrap.INFO: Matched route "POST_api_buscaresposta" (parameters: "_controller": "app.default_controller:getTrataPergunta", "_route": "POST_api_buscaresposta") [] {"clientIp":"10.0.0.106","token":"593d6006de8ba"}
+[2017-06-11 17:21:42] silex-bootstrap.INFO: > POST /api/buscaresposta [] {"clientIp":"10.0.0.106","token":"593d6006de8ba"}
+[2017-06-11 17:21:44] silex-bootstrap.INFO: < 200 [] {"clientIp":"10.0.0.106","token":"593d6006de8ba"}
+[2017-06-11 17:21:44] silex-bootstrap.INFO: Script executed in 1245.822ms. {"msExecTime":1245.822,"method":"POST","path":"/api/buscaresposta"} {"clientIp":"10.0.0.106","token":"593d6006de8ba"}
+[2017-06-11 17:22:21] silex-bootstrap.INFO: Matched route "GET_api_perguntas_idsubcat" (parameters: "_controller": "app.default_controller:getPerguntas", "idsubcat": "2", "_route": "GET_api_perguntas_idsubcat") [] {"clientIp":"10.0.0.107","token":"593d602dc3a03"}
+[2017-06-11 17:22:21] silex-bootstrap.INFO: > GET /api/perguntas/2 [] {"clientIp":"10.0.0.107","token":"593d602dc3a03"}
+[2017-06-11 17:22:21] silex-bootstrap.INFO: < 200 [] {"clientIp":"10.0.0.107","token":"593d602dc3a03"}
+[2017-06-11 17:22:21] silex-bootstrap.DEBUG: Script executed in 150.608ms. {"msExecTime":150.608,"method":"GET","path":"/api/perguntas/2"} {"clientIp":"10.0.0.107","token":"593d602dc3a03"}
+[2017-06-11 17:23:06] silex-bootstrap.INFO: Matched route "GET_api_getsubcategorias" (parameters: "_controller": "app.default_controller:getSubCategorias", "_route": "GET_api_getsubcategorias") [] {"clientIp":"10.0.0.102","token":"593d605a9b74c"}
+[2017-06-11 17:23:06] silex-bootstrap.INFO: > GET /api/getsubcategorias [] {"clientIp":"10.0.0.102","token":"593d605a9b74c"}
+[2017-06-11 17:23:06] silex-bootstrap.INFO: < 200 [] {"clientIp":"10.0.0.102","token":"593d605a9b74c"}
+[2017-06-11 17:23:06] silex-bootstrap.DEBUG: Script executed in 156.785ms. {"msExecTime":156.785,"method":"GET","path":"/api/getsubcategorias"} {"clientIp":"10.0.0.102","token":"593d605a9b74c"}
+[2017-06-11 17:23:08] silex-bootstrap.INFO: Matched route "GET_api_getcategorias" (parameters: "_controller": "app.default_controller:getCategorias", "_route": "GET_api_getcategorias") [] {"clientIp":"10.0.0.107","token":"593d605cef2cf"}
+[2017-06-11 17:23:08] silex-bootstrap.INFO: > GET /api/getcategorias [] {"clientIp":"10.0.0.107","token":"593d605cef2cf"}
+[2017-06-11 17:23:09] silex-bootstrap.INFO: < 200 [] {"clientIp":"10.0.0.107","token":"593d605cef2cf"}
+[2017-06-11 17:23:09] silex-bootstrap.DEBUG: Script executed in 344.661ms. {"msExecTime":344.661,"method":"GET","path":"/api/getcategorias"} {"clientIp":"10.0.0.107","token":"593d605cef2cf"}
+[2017-06-11 17:23:10] silex-bootstrap.INFO: Matched route "GET_api_getsubcategorias" (parameters: "_controller": "app.default_controller:getSubCategorias", "_route": "GET_api_getsubcategorias") [] {"clientIp":"10.0.0.102","token":"593d605e0a34b"}
+[2017-06-11 17:23:10] silex-bootstrap.INFO: > GET /api/getsubcategorias [] {"clientIp":"10.0.0.102","token":"593d605e0a34b"}
+[2017-06-11 17:23:10] silex-bootstrap.INFO: < 200 [] {"clientIp":"10.0.0.102","token":"593d605e0a34b"}
+[2017-06-11 17:23:10] silex-bootstrap.DEBUG: Script executed in 721.161ms. {"msExecTime":721.161,"method":"GET","path":"/api/getsubcategorias"} {"clientIp":"10.0.0.102","token":"593d605e0a34b"}
+[2017-06-11 17:23:20] silex-bootstrap.INFO: Matched route "GET_api_getcategorias" (parameters: "_controller": "app.default_controller:getCategorias", "_route": "GET_api_getcategorias") [] {"clientIp":"10.0.0.107","token":"593d60687310a"}
+[2017-06-11 17:23:20] silex-bootstrap.INFO: > GET /api/getcategorias [] {"clientIp":"10.0.0.107","token":"593d60687310a"}
+[2017-06-11 17:23:21] silex-bootstrap.INFO: < 200 [] {"clientIp":"10.0.0.107","token":"593d60687310a"}
+[2017-06-11 17:23:21] silex-bootstrap.INFO: Script executed in 1046.906ms. {"msExecTime":1046.906,"method":"GET","path":"/api/getcategorias"} {"clientIp":"10.0.0.107","token":"593d60687310a"}
+[2017-06-11 17:23:21] silex-bootstrap.INFO: Matched route "GET_api_getcategorias" (parameters: "_controller": "app.default_controller:getCategorias", "_route": "GET_api_getcategorias") [] {"clientIp":"10.0.0.102","token":"593d606981ce4"}
+[2017-06-11 17:23:21] silex-bootstrap.INFO: > GET /api/getcategorias [] {"clientIp":"10.0.0.102","token":"593d606981ce4"}
+[2017-06-11 17:23:21] silex-bootstrap.INFO: < 200 [] {"clientIp":"10.0.0.102","token":"593d606981ce4"}
+[2017-06-11 17:23:21] silex-bootstrap.DEBUG: Script executed in 472.402ms. {"msExecTime":472.402,"method":"GET","path":"/api/getcategorias"} {"clientIp":"10.0.0.102","token":"593d606981ce4"}
+[2017-06-11 17:23:30] silex-bootstrap.INFO: Matched route "GET_api_getsubcategorias" (parameters: "_controller": "app.default_controller:getSubCategorias", "_route": "GET_api_getsubcategorias") [] {"clientIp":"10.0.0.102","token":"593d60721ce09"}
+[2017-06-11 17:23:30] silex-bootstrap.INFO: > GET /api/getsubcategorias [] {"clientIp":"10.0.0.102","token":"593d60721ce09"}
+[2017-06-11 17:23:31] silex-bootstrap.INFO: < 200 [] {"clientIp":"10.0.0.102","token":"593d60721ce09"}
+[2017-06-11 17:23:31] silex-bootstrap.INFO: Script executed in 1388.059ms. {"msExecTime":1388.059,"method":"GET","path":"/api/getsubcategorias"} {"clientIp":"10.0.0.102","token":"593d60721ce09"}
+[2017-06-11 17:23:55] silex-bootstrap.INFO: Matched route "GET_api_getcategorias" (parameters: "_controller": "app.default_controller:getCategorias", "_route": "GET_api_getcategorias") [] {"clientIp":"10.0.0.107","token":"593d608bc8256"}
+[2017-06-11 17:23:55] silex-bootstrap.INFO: > GET /api/getcategorias [] {"clientIp":"10.0.0.107","token":"593d608bc8256"}
+[2017-06-11 17:23:55] silex-bootstrap.INFO: < 200 [] {"clientIp":"10.0.0.107","token":"593d608bc8256"}
+[2017-06-11 17:23:55] silex-bootstrap.DEBUG: Script executed in 176.599ms. {"msExecTime":176.599,"method":"GET","path":"/api/getcategorias"} {"clientIp":"10.0.0.107","token":"593d608bc8256"}
+[2017-06-11 17:24:00] silex-bootstrap.INFO: Matched route "GET_api_getsubcategorias" (parameters: "_controller": "app.default_controller:getSubCategorias", "_route": "GET_api_getsubcategorias") [] {"clientIp":"10.0.0.107","token":"593d609083049"}
+[2017-06-11 17:24:00] silex-bootstrap.INFO: > GET /api/getsubcategorias [] {"clientIp":"10.0.0.107","token":"593d609083049"}
+[2017-06-11 17:24:00] silex-bootstrap.INFO: < 200 [] {"clientIp":"10.0.0.107","token":"593d609083049"}
+[2017-06-11 17:24:00] silex-bootstrap.DEBUG: Script executed in 332.225ms. {"msExecTime":332.225,"method":"GET","path":"/api/getsubcategorias"} {"clientIp":"10.0.0.107","token":"593d609083049"}
+[2017-06-11 17:24:29] silex-bootstrap.INFO: Matched route "GET_api_getsubcategorias" (parameters: "_controller": "app.default_controller:getSubCategorias", "_route": "GET_api_getsubcategorias") [] {"clientIp":"10.0.0.102","token":"593d60ad1f7e5"}
+[2017-06-11 17:24:29] silex-bootstrap.INFO: > GET /api/getsubcategorias [] {"clientIp":"10.0.0.102","token":"593d60ad1f7e5"}
+[2017-06-11 17:24:29] silex-bootstrap.INFO: < 200 [] {"clientIp":"10.0.0.102","token":"593d60ad1f7e5"}
+[2017-06-11 17:24:29] silex-bootstrap.DEBUG: Script executed in 123.349ms. {"msExecTime":123.349,"method":"GET","path":"/api/getsubcategorias"} {"clientIp":"10.0.0.102","token":"593d60ad1f7e5"}
+[2017-06-11 17:24:35] silex-bootstrap.INFO: Matched route "GET_api_getsubcategorias" (parameters: "_controller": "app.default_controller:getSubCategorias", "_route": "GET_api_getsubcategorias") [] {"clientIp":"10.0.0.102","token":"593d60b339605"}
+[2017-06-11 17:24:35] silex-bootstrap.INFO: > GET /api/getsubcategorias [] {"clientIp":"10.0.0.102","token":"593d60b339605"}
+[2017-06-11 17:24:36] silex-bootstrap.INFO: < 200 [] {"clientIp":"10.0.0.102","token":"593d60b339605"}
+[2017-06-11 17:24:36] silex-bootstrap.DEBUG: Script executed in 804.232ms. {"msExecTime":804.232,"method":"GET","path":"/api/getsubcategorias"} {"clientIp":"10.0.0.102","token":"593d60b339605"}
+[2017-06-11 17:24:36] silex-bootstrap.INFO: Matched route "GET_api_getcategorias" (parameters: "_controller": "app.default_controller:getCategorias", "_route": "GET_api_getcategorias") [] {"clientIp":"10.0.0.102","token":"593d60b40c8e6"}
+[2017-06-11 17:24:36] silex-bootstrap.INFO: > GET /api/getcategorias [] {"clientIp":"10.0.0.102","token":"593d60b40c8e6"}
+[2017-06-11 17:24:36] silex-bootstrap.INFO: < 200 [] {"clientIp":"10.0.0.102","token":"593d60b40c8e6"}
+[2017-06-11 17:24:36] silex-bootstrap.DEBUG: Script executed in 129.118ms. {"msExecTime":129.118,"method":"GET","path":"/api/getcategorias"} {"clientIp":"10.0.0.102","token":"593d60b40c8e6"}
+[2017-06-11 17:24:39] silex-bootstrap.INFO: Matched route "GET_api_getcategorias" (parameters: "_controller": "app.default_controller:getCategorias", "_route": "GET_api_getcategorias") [] {"clientIp":"10.0.0.102","token":"593d60b71c3d6"}
+[2017-06-11 17:24:39] silex-bootstrap.INFO: > GET /api/getcategorias [] {"clientIp":"10.0.0.102","token":"593d60b71c3d6"}
+[2017-06-11 17:24:39] silex-bootstrap.INFO: < 200 [] {"clientIp":"10.0.0.102","token":"593d60b71c3d6"}
+[2017-06-11 17:24:39] silex-bootstrap.DEBUG: Script executed in 312.515ms. {"msExecTime":312.515,"method":"GET","path":"/api/getcategorias"} {"clientIp":"10.0.0.102","token":"593d60b71c3d6"}
+[2017-06-11 17:24:41] silex-bootstrap.INFO: Matched route "GET_api_getsubcategorias" (parameters: "_controller": "app.default_controller:getSubCategorias", "_route": "GET_api_getsubcategorias") [] {"clientIp":"10.0.0.102","token":"593d60b9c3a4e"}
+[2017-06-11 17:24:41] silex-bootstrap.INFO: > GET /api/getsubcategorias [] {"clientIp":"10.0.0.102","token":"593d60b9c3a4e"}
+[2017-06-11 17:24:42] silex-bootstrap.INFO: < 200 [] {"clientIp":"10.0.0.102","token":"593d60b9c3a4e"}
+[2017-06-11 17:24:42] silex-bootstrap.DEBUG: Script executed in 962.385ms. {"msExecTime":962.385,"method":"GET","path":"/api/getsubcategorias"} {"clientIp":"10.0.0.102","token":"593d60b9c3a4e"}
+[2017-06-11 17:24:56] silex-bootstrap.INFO: Matched route "GET_api_getsubcategorias" (parameters: "_controller": "app.default_controller:getSubCategorias", "_route": "GET_api_getsubcategorias") [] {"clientIp":"10.0.0.102","token":"593d60c82534c"}
+[2017-06-11 17:24:56] silex-bootstrap.INFO: > GET /api/getsubcategorias [] {"clientIp":"10.0.0.102","token":"593d60c82534c"}
+[2017-06-11 17:24:58] silex-bootstrap.INFO: < 200 [] {"clientIp":"10.0.0.102","token":"593d60c82534c"}
+[2017-06-11 17:24:58] silex-bootstrap.INFO: Script executed in 1868.976ms. {"msExecTime":1868.976,"method":"GET","path":"/api/getsubcategorias"} {"clientIp":"10.0.0.102","token":"593d60c82534c"}
+[2017-06-11 17:25:00] silex-bootstrap.INFO: Matched route "GET_api_getcategorias" (parameters: "_controller": "app.default_controller:getCategorias", "_route": "GET_api_getcategorias") [] {"clientIp":"10.0.0.102","token":"593d60cc85a1c"}
+[2017-06-11 17:25:00] silex-bootstrap.INFO: > GET /api/getcategorias [] {"clientIp":"10.0.0.102","token":"593d60cc85a1c"}
+[2017-06-11 17:25:00] silex-bootstrap.INFO: < 200 [] {"clientIp":"10.0.0.102","token":"593d60cc85a1c"}
+[2017-06-11 17:25:00] silex-bootstrap.DEBUG: Script executed in 129.04ms. {"msExecTime":129.04,"method":"GET","path":"/api/getcategorias"} {"clientIp":"10.0.0.102","token":"593d60cc85a1c"}
+[2017-06-11 17:25:04] silex-bootstrap.INFO: Matched route "GET_api_getcategorias" (parameters: "_controller": "app.default_controller:getCategorias", "_route": "GET_api_getcategorias") [] {"clientIp":"10.0.0.102","token":"593d60d039755"}
+[2017-06-11 17:25:04] silex-bootstrap.INFO: > GET /api/getcategorias [] {"clientIp":"10.0.0.102","token":"593d60d039755"}
+[2017-06-11 17:25:05] silex-bootstrap.INFO: < 200 [] {"clientIp":"10.0.0.102","token":"593d60d039755"}
+[2017-06-11 17:25:05] silex-bootstrap.DEBUG: Script executed in 830.435ms. {"msExecTime":830.435,"method":"GET","path":"/api/getcategorias"} {"clientIp":"10.0.0.102","token":"593d60d039755"}
+[2017-06-11 17:25:08] silex-bootstrap.INFO: Matched route "GET_api_getsubcategorias" (parameters: "_controller": "app.default_controller:getSubCategorias", "_route": "GET_api_getsubcategorias") [] {"clientIp":"10.0.0.102","token":"593d60d439a25"}
+[2017-06-11 17:25:08] silex-bootstrap.INFO: > GET /api/getsubcategorias [] {"clientIp":"10.0.0.102","token":"593d60d439a25"}
+[2017-06-11 17:25:08] silex-bootstrap.INFO: < 200 [] {"clientIp":"10.0.0.102","token":"593d60d439a25"}
+[2017-06-11 17:25:08] silex-bootstrap.DEBUG: Script executed in 405.607ms. {"msExecTime":405.607,"method":"GET","path":"/api/getsubcategorias"} {"clientIp":"10.0.0.102","token":"593d60d439a25"}
+[2017-06-11 17:30:50] silex-bootstrap.INFO: Matched route "GET_api_getsubcategorias" (parameters: "_controller": "app.default_controller:getSubCategorias", "_route": "GET_api_getsubcategorias") [] {"clientIp":"10.0.0.102","token":"593d622a2043e"}
+[2017-06-11 17:30:50] silex-bootstrap.INFO: > GET /api/getsubcategorias [] {"clientIp":"10.0.0.102","token":"593d622a2043e"}
+[2017-06-11 17:30:51] silex-bootstrap.INFO: < 200 [] {"clientIp":"10.0.0.102","token":"593d622a2043e"}
+[2017-06-11 17:30:51] silex-bootstrap.DEBUG: Script executed in 997.723ms. {"msExecTime":997.723,"method":"GET","path":"/api/getsubcategorias"} {"clientIp":"10.0.0.102","token":"593d622a2043e"}
+[2017-06-11 17:30:56] silex-bootstrap.INFO: Matched route "GET_api_getcategorias" (parameters: "_controller": "app.default_controller:getCategorias", "_route": "GET_api_getcategorias") [] {"clientIp":"10.0.0.102","token":"593d62306fa1f"}
+[2017-06-11 17:30:56] silex-bootstrap.INFO: > GET /api/getcategorias [] {"clientIp":"10.0.0.102","token":"593d62306fa1f"}
+[2017-06-11 17:30:56] silex-bootstrap.INFO: < 200 [] {"clientIp":"10.0.0.102","token":"593d62306fa1f"}
+[2017-06-11 17:30:56] silex-bootstrap.DEBUG: Script executed in 368.376ms. {"msExecTime":368.376,"method":"GET","path":"/api/getcategorias"} {"clientIp":"10.0.0.102","token":"593d62306fa1f"}
+[2017-06-11 17:30:59] silex-bootstrap.INFO: Matched route "GET_api_getsubcategorias" (parameters: "_controller": "app.default_controller:getSubCategorias", "_route": "GET_api_getsubcategorias") [] {"clientIp":"10.0.0.102","token":"593d6233a1dbe"}
+[2017-06-11 17:30:59] silex-bootstrap.INFO: > GET /api/getsubcategorias [] {"clientIp":"10.0.0.102","token":"593d6233a1dbe"}
+[2017-06-11 17:31:00] silex-bootstrap.INFO: < 200 [] {"clientIp":"10.0.0.102","token":"593d6233a1dbe"}
+[2017-06-11 17:31:00] silex-bootstrap.DEBUG: Script executed in 457.474ms. {"msExecTime":457.474,"method":"GET","path":"/api/getsubcategorias"} {"clientIp":"10.0.0.102","token":"593d6233a1dbe"}
+[2017-06-11 17:31:02] silex-bootstrap.INFO: Matched route "GET_api_getcategorias" (parameters: "_controller": "app.default_controller:getCategorias", "_route": "GET_api_getcategorias") [] {"clientIp":"10.0.0.102","token":"593d62368f9fe"}
+[2017-06-11 17:31:02] silex-bootstrap.INFO: > GET /api/getcategorias [] {"clientIp":"10.0.0.102","token":"593d62368f9fe"}
+[2017-06-11 17:31:03] silex-bootstrap.INFO: < 200 [] {"clientIp":"10.0.0.102","token":"593d62368f9fe"}
+[2017-06-11 17:31:03] silex-bootstrap.DEBUG: Script executed in 920.872ms. {"msExecTime":920.872,"method":"GET","path":"/api/getcategorias"} {"clientIp":"10.0.0.102","token":"593d62368f9fe"}
+[2017-06-11 17:31:04] silex-bootstrap.INFO: Matched route "GET_api_getsubcategorias" (parameters: "_controller": "app.default_controller:getSubCategorias", "_route": "GET_api_getsubcategorias") [] {"clientIp":"10.0.0.102","token":"593d623857e4e"}
+[2017-06-11 17:31:04] silex-bootstrap.INFO: > GET /api/getsubcategorias [] {"clientIp":"10.0.0.102","token":"593d623857e4e"}
+[2017-06-11 17:31:04] silex-bootstrap.INFO: < 200 [] {"clientIp":"10.0.0.102","token":"593d623857e4e"}
+[2017-06-11 17:31:04] silex-bootstrap.DEBUG: Script executed in 430.699ms. {"msExecTime":430.699,"method":"GET","path":"/api/getsubcategorias"} {"clientIp":"10.0.0.102","token":"593d623857e4e"}
+[2017-06-11 17:32:22] silex-bootstrap.INFO: Matched route "GET_api_getsubcategorias" (parameters: "_controller": "app.default_controller:getSubCategorias", "_route": "GET_api_getsubcategorias") [] {"clientIp":"10.0.0.102","token":"593d6286b6542"}
+[2017-06-11 17:32:22] silex-bootstrap.INFO: > GET /api/getsubcategorias [] {"clientIp":"10.0.0.102","token":"593d6286b6542"}
+[2017-06-11 17:32:23] silex-bootstrap.INFO: < 200 [] {"clientIp":"10.0.0.102","token":"593d6286b6542"}
+[2017-06-11 17:32:23] silex-bootstrap.DEBUG: Script executed in 335.731ms. {"msExecTime":335.731,"method":"GET","path":"/api/getsubcategorias"} {"clientIp":"10.0.0.102","token":"593d6286b6542"}
+[2017-06-11 17:33:22] silex-bootstrap.INFO: Matched route "GET_api_getsubcategorias" (parameters: "_controller": "app.default_controller:getSubCategorias", "_route": "GET_api_getsubcategorias") [] {"clientIp":"10.0.0.102","token":"593d62c2729ca"}
+[2017-06-11 17:33:22] silex-bootstrap.INFO: > GET /api/getsubcategorias [] {"clientIp":"10.0.0.102","token":"593d62c2729ca"}
+[2017-06-11 17:33:24] silex-bootstrap.INFO: < 200 [] {"clientIp":"10.0.0.102","token":"593d62c2729ca"}
+[2017-06-11 17:33:24] silex-bootstrap.INFO: Script executed in 1606.851ms. {"msExecTime":1606.851,"method":"GET","path":"/api/getsubcategorias"} {"clientIp":"10.0.0.102","token":"593d62c2729ca"}
+[2017-06-11 17:35:49] silex-bootstrap.INFO: Matched route "GET_api_getcategorias" (parameters: "_controller": "app.default_controller:getCategorias", "_route": "GET_api_getcategorias") [] {"clientIp":"10.0.0.107","token":"593d6355437c8"}
+[2017-06-11 17:35:49] silex-bootstrap.INFO: > GET /api/getcategorias [] {"clientIp":"10.0.0.107","token":"593d6355437c8"}
+[2017-06-11 17:35:49] silex-bootstrap.INFO: < 200 [] {"clientIp":"10.0.0.107","token":"593d6355437c8"}
+[2017-06-11 17:35:49] silex-bootstrap.DEBUG: Script executed in 104.926ms. {"msExecTime":104.926,"method":"GET","path":"/api/getcategorias"} {"clientIp":"10.0.0.107","token":"593d6355437c8"}
+[2017-06-11 17:35:51] silex-bootstrap.INFO: Matched route "GET_api_getsubcategorias" (parameters: "_controller": "app.default_controller:getSubCategorias", "_route": "GET_api_getsubcategorias") [] {"clientIp":"10.0.0.107","token":"593d635732f7e"}
+[2017-06-11 17:35:51] silex-bootstrap.INFO: > GET /api/getsubcategorias [] {"clientIp":"10.0.0.107","token":"593d635732f7e"}
+[2017-06-11 17:35:51] silex-bootstrap.INFO: < 200 [] {"clientIp":"10.0.0.107","token":"593d635732f7e"}
+[2017-06-11 17:35:51] silex-bootstrap.DEBUG: Script executed in 184.52ms. {"msExecTime":184.52,"method":"GET","path":"/api/getsubcategorias"} {"clientIp":"10.0.0.107","token":"593d635732f7e"}
+[2017-06-11 17:35:52] silex-bootstrap.INFO: Matched route "GET_api_perguntas_idsubcat" (parameters: "_controller": "app.default_controller:getPerguntas", "idsubcat": "2", "_route": "GET_api_perguntas_idsubcat") [] {"clientIp":"10.0.0.107","token":"593d6358454c2"}
+[2017-06-11 17:35:52] silex-bootstrap.INFO: > GET /api/perguntas/2 [] {"clientIp":"10.0.0.107","token":"593d6358454c2"}
+[2017-06-11 17:35:52] silex-bootstrap.INFO: < 200 [] {"clientIp":"10.0.0.107","token":"593d6358454c2"}
+[2017-06-11 17:35:52] silex-bootstrap.DEBUG: Script executed in 107.43ms. {"msExecTime":107.43,"method":"GET","path":"/api/perguntas/2"} {"clientIp":"10.0.0.107","token":"593d6358454c2"}
+[2017-06-11 17:36:07] silex-bootstrap.INFO: Matched route "GET_api_getcategorias" (parameters: "_controller": "app.default_controller:getCategorias", "_route": "GET_api_getcategorias") [] {"clientIp":"10.0.0.102","token":"593d636745878"}
+[2017-06-11 17:36:07] silex-bootstrap.INFO: > GET /api/getcategorias [] {"clientIp":"10.0.0.102","token":"593d636745878"}
+[2017-06-11 17:36:07] silex-bootstrap.INFO: < 200 [] {"clientIp":"10.0.0.102","token":"593d636745878"}
+[2017-06-11 17:36:07] silex-bootstrap.DEBUG: Script executed in 395.667ms. {"msExecTime":395.667,"method":"GET","path":"/api/getcategorias"} {"clientIp":"10.0.0.102","token":"593d636745878"}
+[2017-06-11 17:36:09] silex-bootstrap.INFO: Matched route "GET_api_getsubcategorias" (parameters: "_controller": "app.default_controller:getSubCategorias", "_route": "GET_api_getsubcategorias") [] {"clientIp":"10.0.0.102","token":"593d6369a2a54"}
+[2017-06-11 17:36:09] silex-bootstrap.INFO: > GET /api/getsubcategorias [] {"clientIp":"10.0.0.102","token":"593d6369a2a54"}
+[2017-06-11 17:36:10] silex-bootstrap.INFO: < 200 [] {"clientIp":"10.0.0.102","token":"593d6369a2a54"}
+[2017-06-11 17:36:10] silex-bootstrap.DEBUG: Script executed in 639.985ms. {"msExecTime":639.985,"method":"GET","path":"/api/getsubcategorias"} {"clientIp":"10.0.0.102","token":"593d6369a2a54"}
+[2017-06-11 17:36:58] silex-bootstrap.INFO: Matched route "GET_api_getcategorias" (parameters: "_controller": "app.default_controller:getCategorias", "_route": "GET_api_getcategorias") [] {"clientIp":"10.0.0.107","token":"593d639a284ee"}
+[2017-06-11 17:36:58] silex-bootstrap.INFO: > GET /api/getcategorias [] {"clientIp":"10.0.0.107","token":"593d639a284ee"}
+[2017-06-11 17:36:58] silex-bootstrap.INFO: < 200 [] {"clientIp":"10.0.0.107","token":"593d639a284ee"}
+[2017-06-11 17:36:58] silex-bootstrap.DEBUG: Script executed in 820.312ms. {"msExecTime":820.312,"method":"GET","path":"/api/getcategorias"} {"clientIp":"10.0.0.107","token":"593d639a284ee"}
+[2017-06-11 17:37:02] silex-bootstrap.INFO: Matched route "GET_api_getsubcategorias" (parameters: "_controller": "app.default_controller:getSubCategorias", "_route": "GET_api_getsubcategorias") [] {"clientIp":"10.0.0.107","token":"593d639e72a7e"}
+[2017-06-11 17:37:02] silex-bootstrap.INFO: > GET /api/getsubcategorias [] {"clientIp":"10.0.0.107","token":"593d639e72a7e"}
+[2017-06-11 17:37:02] silex-bootstrap.INFO: < 200 [] {"clientIp":"10.0.0.107","token":"593d639e72a7e"}
+[2017-06-11 17:37:02] silex-bootstrap.DEBUG: Script executed in 493.288ms. {"msExecTime":493.288,"method":"GET","path":"/api/getsubcategorias"} {"clientIp":"10.0.0.107","token":"593d639e72a7e"}
+[2017-06-11 17:37:05] silex-bootstrap.INFO: Matched route "GET_api_perguntas_idsubcat" (parameters: "_controller": "app.default_controller:getPerguntas", "idsubcat": "1", "_route": "GET_api_perguntas_idsubcat") [] {"clientIp":"10.0.0.107","token":"593d63a14ff13"}
+[2017-06-11 17:37:05] silex-bootstrap.INFO: > GET /api/perguntas/1 [] {"clientIp":"10.0.0.107","token":"593d63a14ff13"}
+[2017-06-11 17:37:05] silex-bootstrap.CRITICAL: Symfony\Component\Debug\Exception\DummyException:  (uncaught exception) at /Users/steferson/Documents/Dropbox/3. Trabalho/hackfest/praquemreclamo/vendor/symfony/debug/Symfony/Component/Debug/ErrorHandler.php line 174 {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\DummyException:  at /Users/steferson/Documents/Dropbox/3. Trabalho/hackfest/praquemreclamo/vendor/symfony/debug/Symfony/Component/Debug/ErrorHandler.php:174)"} {"clientIp":"10.0.0.107","token":"593d63a14ff13"}
+[2017-06-11 17:37:05] silex-bootstrap.INFO: < 500 [] {"clientIp":"10.0.0.107","token":"593d63a14ff13"}
+[2017-06-11 17:37:05] silex-bootstrap.DEBUG: Script executed in 198.78ms. {"msExecTime":198.78,"method":"GET","path":"/api/perguntas/1"} {"clientIp":"10.0.0.107","token":"593d63a14ff13"}
+[2017-06-11 17:37:06] silex-bootstrap.INFO: Matched route "GET_api_getsubcategorias" (parameters: "_controller": "app.default_controller:getSubCategorias", "_route": "GET_api_getsubcategorias") [] {"clientIp":"10.0.0.107","token":"593d63a27e915"}
+[2017-06-11 17:37:06] silex-bootstrap.INFO: > GET /api/getsubcategorias [] {"clientIp":"10.0.0.107","token":"593d63a27e915"}
+[2017-06-11 17:37:06] silex-bootstrap.INFO: < 200 [] {"clientIp":"10.0.0.107","token":"593d63a27e915"}
+[2017-06-11 17:37:06] silex-bootstrap.DEBUG: Script executed in 396.616ms. {"msExecTime":396.616,"method":"GET","path":"/api/getsubcategorias"} {"clientIp":"10.0.0.107","token":"593d63a27e915"}
+[2017-06-11 17:37:07] silex-bootstrap.INFO: Matched route "GET_api_perguntas_idsubcat" (parameters: "_controller": "app.default_controller:getPerguntas", "idsubcat": "2", "_route": "GET_api_perguntas_idsubcat") [] {"clientIp":"10.0.0.107","token":"593d63a3a5ab9"}
+[2017-06-11 17:37:07] silex-bootstrap.INFO: > GET /api/perguntas/2 [] {"clientIp":"10.0.0.107","token":"593d63a3a5ab9"}
+[2017-06-11 17:37:08] silex-bootstrap.INFO: < 200 [] {"clientIp":"10.0.0.107","token":"593d63a3a5ab9"}
+[2017-06-11 17:37:08] silex-bootstrap.DEBUG: Script executed in 520.299ms. {"msExecTime":520.299,"method":"GET","path":"/api/perguntas/2"} {"clientIp":"10.0.0.107","token":"593d63a3a5ab9"}
+[2017-06-11 17:38:00] silex-bootstrap.INFO: Matched route "GET_api_getcategorias" (parameters: "_controller": "app.default_controller:getCategorias", "_route": "GET_api_getcategorias") [] {"clientIp":"10.0.0.102","token":"593d63d850e33"}
+[2017-06-11 17:38:00] silex-bootstrap.INFO: > GET /api/getcategorias [] {"clientIp":"10.0.0.102","token":"593d63d850e33"}
+[2017-06-11 17:38:00] silex-bootstrap.INFO: < 200 [] {"clientIp":"10.0.0.102","token":"593d63d850e33"}
+[2017-06-11 17:38:00] silex-bootstrap.DEBUG: Script executed in 491.044ms. {"msExecTime":491.044,"method":"GET","path":"/api/getcategorias"} {"clientIp":"10.0.0.102","token":"593d63d850e33"}
+[2017-06-11 17:38:01] silex-bootstrap.INFO: Matched route "GET_api_getsubcategorias" (parameters: "_controller": "app.default_controller:getSubCategorias", "_route": "GET_api_getsubcategorias") [] {"clientIp":"10.0.0.102","token":"593d63d9cb748"}
+[2017-06-11 17:38:01] silex-bootstrap.INFO: > GET /api/getsubcategorias [] {"clientIp":"10.0.0.102","token":"593d63d9cb748"}
+[2017-06-11 17:38:02] silex-bootstrap.INFO: < 200 [] {"clientIp":"10.0.0.102","token":"593d63d9cb748"}
+[2017-06-11 17:38:02] silex-bootstrap.DEBUG: Script executed in 840.986ms. {"msExecTime":840.986,"method":"GET","path":"/api/getsubcategorias"} {"clientIp":"10.0.0.102","token":"593d63d9cb748"}
+[2017-06-11 17:38:18] silex-bootstrap.INFO: Matched route "GET_api_getsubcategorias" (parameters: "_controller": "app.default_controller:getSubCategorias", "_route": "GET_api_getsubcategorias") [] {"clientIp":"10.0.0.102","token":"593d63ea4ba8d"}
+[2017-06-11 17:38:18] silex-bootstrap.INFO: > GET /api/getsubcategorias [] {"clientIp":"10.0.0.102","token":"593d63ea4ba8d"}
+[2017-06-11 17:38:18] silex-bootstrap.INFO: < 200 [] {"clientIp":"10.0.0.102","token":"593d63ea4ba8d"}
+[2017-06-11 17:38:18] silex-bootstrap.DEBUG: Script executed in 93.838ms. {"msExecTime":93.838,"method":"GET","path":"/api/getsubcategorias"} {"clientIp":"10.0.0.102","token":"593d63ea4ba8d"}
+[2017-06-11 17:38:24] silex-bootstrap.INFO: Matched route "GET_api_getcategorias" (parameters: "_controller": "app.default_controller:getCategorias", "_route": "GET_api_getcategorias") [] {"clientIp":"10.0.0.107","token":"593d63f086de3"}
+[2017-06-11 17:38:24] silex-bootstrap.INFO: > GET /api/getcategorias [] {"clientIp":"10.0.0.107","token":"593d63f086de3"}
+[2017-06-11 17:38:24] silex-bootstrap.INFO: < 200 [] {"clientIp":"10.0.0.107","token":"593d63f086de3"}
+[2017-06-11 17:38:24] silex-bootstrap.DEBUG: Script executed in 46.663ms. {"msExecTime":46.663,"method":"GET","path":"/api/getcategorias"} {"clientIp":"10.0.0.107","token":"593d63f086de3"}
+[2017-06-11 17:38:35] silex-bootstrap.INFO: Matched route "GET_api_getcategorias" (parameters: "_controller": "app.default_controller:getCategorias", "_route": "GET_api_getcategorias") [] {"clientIp":"10.0.0.107","token":"593d63fb73f24"}
+[2017-06-11 17:38:35] silex-bootstrap.INFO: > GET /api/getcategorias [] {"clientIp":"10.0.0.107","token":"593d63fb73f24"}
+[2017-06-11 17:38:35] silex-bootstrap.INFO: < 200 [] {"clientIp":"10.0.0.107","token":"593d63fb73f24"}
+[2017-06-11 17:38:35] silex-bootstrap.DEBUG: Script executed in 42.39ms. {"msExecTime":42.39,"method":"GET","path":"/api/getcategorias"} {"clientIp":"10.0.0.107","token":"593d63fb73f24"}
+[2017-06-11 17:38:54] silex-bootstrap.INFO: Matched route "GET_api_getcategorias" (parameters: "_controller": "app.default_controller:getCategorias", "_route": "GET_api_getcategorias") [] {"clientIp":"10.0.0.107","token":"593d640ebe39f"}
+[2017-06-11 17:38:54] silex-bootstrap.INFO: > GET /api/getcategorias [] {"clientIp":"10.0.0.107","token":"593d640ebe39f"}
+[2017-06-11 17:38:55] silex-bootstrap.INFO: < 200 [] {"clientIp":"10.0.0.107","token":"593d640ebe39f"}
+[2017-06-11 17:38:55] silex-bootstrap.DEBUG: Script executed in 369.078ms. {"msExecTime":369.078,"method":"GET","path":"/api/getcategorias"} {"clientIp":"10.0.0.107","token":"593d640ebe39f"}
+[2017-06-11 17:39:08] silex-bootstrap.INFO: Matched route "GET_api_getcategorias" (parameters: "_controller": "app.default_controller:getCategorias", "_route": "GET_api_getcategorias") [] {"clientIp":"10.0.0.107","token":"593d641c7181f"}
+[2017-06-11 17:39:08] silex-bootstrap.INFO: > GET /api/getcategorias [] {"clientIp":"10.0.0.107","token":"593d641c7181f"}
+[2017-06-11 17:39:08] silex-bootstrap.INFO: < 200 [] {"clientIp":"10.0.0.107","token":"593d641c7181f"}
+[2017-06-11 17:39:08] silex-bootstrap.DEBUG: Script executed in 227.725ms. {"msExecTime":227.725,"method":"GET","path":"/api/getcategorias"} {"clientIp":"10.0.0.107","token":"593d641c7181f"}
+[2017-06-11 17:39:17] silex-bootstrap.INFO: Matched route "GET_api_getcategorias" (parameters: "_controller": "app.default_controller:getCategorias", "_route": "GET_api_getcategorias") [] {"clientIp":"10.0.0.107","token":"593d64252d0fc"}
+[2017-06-11 17:39:17] silex-bootstrap.INFO: > GET /api/getcategorias [] {"clientIp":"10.0.0.107","token":"593d64252d0fc"}
+[2017-06-11 17:39:17] silex-bootstrap.INFO: < 200 [] {"clientIp":"10.0.0.107","token":"593d64252d0fc"}
+[2017-06-11 17:39:17] silex-bootstrap.DEBUG: Script executed in 242.07ms. {"msExecTime":242.07,"method":"GET","path":"/api/getcategorias"} {"clientIp":"10.0.0.107","token":"593d64252d0fc"}
+[2017-06-11 17:39:32] silex-bootstrap.INFO: Matched route "GET_api_getcategorias" (parameters: "_controller": "app.default_controller:getCategorias", "_route": "GET_api_getcategorias") [] {"clientIp":"10.0.0.102","token":"593d6434e7a03"}
+[2017-06-11 17:39:32] silex-bootstrap.INFO: > GET /api/getcategorias [] {"clientIp":"10.0.0.102","token":"593d6434e7a03"}
+[2017-06-11 17:39:33] silex-bootstrap.INFO: < 200 [] {"clientIp":"10.0.0.102","token":"593d6434e7a03"}
+[2017-06-11 17:39:33] silex-bootstrap.DEBUG: Script executed in 142.023ms. {"msExecTime":142.023,"method":"GET","path":"/api/getcategorias"} {"clientIp":"10.0.0.102","token":"593d6434e7a03"}
+[2017-06-11 17:39:36] silex-bootstrap.INFO: Matched route "GET_api_getsubcategorias" (parameters: "_controller": "app.default_controller:getSubCategorias", "_route": "GET_api_getsubcategorias") [] {"clientIp":"10.0.0.102","token":"593d643818289"}
+[2017-06-11 17:39:36] silex-bootstrap.INFO: > GET /api/getsubcategorias [] {"clientIp":"10.0.0.102","token":"593d643818289"}
+[2017-06-11 17:39:36] silex-bootstrap.INFO: < 200 [] {"clientIp":"10.0.0.102","token":"593d643818289"}
+[2017-06-11 17:39:36] silex-bootstrap.DEBUG: Script executed in 145.652ms. {"msExecTime":145.652,"method":"GET","path":"/api/getsubcategorias"} {"clientIp":"10.0.0.102","token":"593d643818289"}
+[2017-06-11 17:39:43] silex-bootstrap.INFO: Matched route "GET_api_getcategorias" (parameters: "_controller": "app.default_controller:getCategorias", "_route": "GET_api_getcategorias") [] {"clientIp":"10.0.0.107","token":"593d643fe92b8"}
+[2017-06-11 17:39:43] silex-bootstrap.INFO: > GET /api/getcategorias [] {"clientIp":"10.0.0.107","token":"593d643fe92b8"}
+[2017-06-11 17:39:44] silex-bootstrap.INFO: < 200 [] {"clientIp":"10.0.0.107","token":"593d643fe92b8"}
+[2017-06-11 17:39:44] silex-bootstrap.DEBUG: Script executed in 588.792ms. {"msExecTime":588.792,"method":"GET","path":"/api/getcategorias"} {"clientIp":"10.0.0.107","token":"593d643fe92b8"}
+[2017-06-11 17:39:45] silex-bootstrap.INFO: Matched route "GET_api_getcategorias" (parameters: "_controller": "app.default_controller:getCategorias", "_route": "GET_api_getcategorias") [] {"clientIp":"10.0.0.102","token":"593d64413ab5d"}
+[2017-06-11 17:39:45] silex-bootstrap.INFO: > GET /api/getcategorias [] {"clientIp":"10.0.0.102","token":"593d64413ab5d"}
+[2017-06-11 17:39:45] silex-bootstrap.INFO: < 200 [] {"clientIp":"10.0.0.102","token":"593d64413ab5d"}
+[2017-06-11 17:39:45] silex-bootstrap.DEBUG: Script executed in 206.694ms. {"msExecTime":206.694,"method":"GET","path":"/api/getcategorias"} {"clientIp":"10.0.0.102","token":"593d64413ab5d"}
+[2017-06-11 17:39:46] silex-bootstrap.INFO: Matched route "GET_api_getsubcategorias" (parameters: "_controller": "app.default_controller:getSubCategorias", "_route": "GET_api_getsubcategorias") [] {"clientIp":"10.0.0.102","token":"593d64426700b"}
+[2017-06-11 17:39:46] silex-bootstrap.INFO: > GET /api/getsubcategorias [] {"clientIp":"10.0.0.102","token":"593d64426700b"}
+[2017-06-11 17:39:46] silex-bootstrap.INFO: < 200 [] {"clientIp":"10.0.0.102","token":"593d64426700b"}
+[2017-06-11 17:39:46] silex-bootstrap.DEBUG: Script executed in 131.73ms. {"msExecTime":131.73,"method":"GET","path":"/api/getsubcategorias"} {"clientIp":"10.0.0.102","token":"593d64426700b"}
+[2017-06-11 17:40:01] silex-bootstrap.INFO: Matched route "GET_api_getcategorias" (parameters: "_controller": "app.default_controller:getCategorias", "_route": "GET_api_getcategorias") [] {"clientIp":"10.0.0.102","token":"593d6451c474b"}
+[2017-06-11 17:40:01] silex-bootstrap.INFO: > GET /api/getcategorias [] {"clientIp":"10.0.0.102","token":"593d6451c474b"}
+[2017-06-11 17:40:01] silex-bootstrap.INFO: < 200 [] {"clientIp":"10.0.0.102","token":"593d6451c474b"}
+[2017-06-11 17:40:01] silex-bootstrap.DEBUG: Script executed in 136.298ms. {"msExecTime":136.298,"method":"GET","path":"/api/getcategorias"} {"clientIp":"10.0.0.102","token":"593d6451c474b"}
+[2017-06-11 17:40:03] silex-bootstrap.INFO: Matched route "GET_api_getsubcategorias" (parameters: "_controller": "app.default_controller:getSubCategorias", "_route": "GET_api_getsubcategorias") [] {"clientIp":"10.0.0.102","token":"593d6453dd9d9"}
+[2017-06-11 17:40:03] silex-bootstrap.INFO: > GET /api/getsubcategorias [] {"clientIp":"10.0.0.102","token":"593d6453dd9d9"}
+[2017-06-11 17:40:03] silex-bootstrap.INFO: < 200 [] {"clientIp":"10.0.0.102","token":"593d6453dd9d9"}
+[2017-06-11 17:40:03] silex-bootstrap.DEBUG: Script executed in 107.351ms. {"msExecTime":107.351,"method":"GET","path":"/api/getsubcategorias"} {"clientIp":"10.0.0.102","token":"593d6453dd9d9"}
+[2017-06-11 17:40:19] silex-bootstrap.INFO: Matched route "GET_api_getcategorias" (parameters: "_controller": "app.default_controller:getCategorias", "_route": "GET_api_getcategorias") [] {"clientIp":"10.0.0.107","token":"593d6463f1505"}
+[2017-06-11 17:40:19] silex-bootstrap.INFO: > GET /api/getcategorias [] {"clientIp":"10.0.0.107","token":"593d6463f1505"}
+[2017-06-11 17:40:20] silex-bootstrap.INFO: < 200 [] {"clientIp":"10.0.0.107","token":"593d6463f1505"}
+[2017-06-11 17:40:20] silex-bootstrap.DEBUG: Script executed in 305.732ms. {"msExecTime":305.732,"method":"GET","path":"/api/getcategorias"} {"clientIp":"10.0.0.107","token":"593d6463f1505"}
+[2017-06-11 17:40:24] silex-bootstrap.INFO: Matched route "GET_api_getcategorias" (parameters: "_controller": "app.default_controller:getCategorias", "_route": "GET_api_getcategorias") [] {"clientIp":"10.0.0.102","token":"593d6468620aa"}
+[2017-06-11 17:40:24] silex-bootstrap.INFO: > GET /api/getcategorias [] {"clientIp":"10.0.0.102","token":"593d6468620aa"}
+[2017-06-11 17:40:24] silex-bootstrap.INFO: < 200 [] {"clientIp":"10.0.0.102","token":"593d6468620aa"}
+[2017-06-11 17:40:24] silex-bootstrap.DEBUG: Script executed in 310.273ms. {"msExecTime":310.273,"method":"GET","path":"/api/getcategorias"} {"clientIp":"10.0.0.102","token":"593d6468620aa"}
+[2017-06-11 17:40:25] silex-bootstrap.INFO: Matched route "GET_api_getsubcategorias" (parameters: "_controller": "app.default_controller:getSubCategorias", "_route": "GET_api_getsubcategorias") [] {"clientIp":"10.0.0.102","token":"593d6469dd1c2"}
+[2017-06-11 17:40:25] silex-bootstrap.INFO: > GET /api/getsubcategorias [] {"clientIp":"10.0.0.102","token":"593d6469dd1c2"}
+[2017-06-11 17:40:25] silex-bootstrap.INFO: < 200 [] {"clientIp":"10.0.0.102","token":"593d6469dd1c2"}
+[2017-06-11 17:40:25] silex-bootstrap.DEBUG: Script executed in 103.506ms. {"msExecTime":103.506,"method":"GET","path":"/api/getsubcategorias"} {"clientIp":"10.0.0.102","token":"593d6469dd1c2"}
+[2017-06-11 17:40:33] silex-bootstrap.INFO: Matched route "GET_api_getcategorias" (parameters: "_controller": "app.default_controller:getCategorias", "_route": "GET_api_getcategorias") [] {"clientIp":"10.0.0.102","token":"593d64714204d"}
+[2017-06-11 17:40:33] silex-bootstrap.INFO: > GET /api/getcategorias [] {"clientIp":"10.0.0.102","token":"593d64714204d"}
+[2017-06-11 17:40:33] silex-bootstrap.INFO: < 200 [] {"clientIp":"10.0.0.102","token":"593d64714204d"}
+[2017-06-11 17:40:33] silex-bootstrap.DEBUG: Script executed in 140.29ms. {"msExecTime":140.29,"method":"GET","path":"/api/getcategorias"} {"clientIp":"10.0.0.102","token":"593d64714204d"}
+[2017-06-11 17:40:34] silex-bootstrap.INFO: Matched route "GET_api_getsubcategorias" (parameters: "_controller": "app.default_controller:getSubCategorias", "_route": "GET_api_getsubcategorias") [] {"clientIp":"10.0.0.102","token":"593d647298473"}
+[2017-06-11 17:40:34] silex-bootstrap.INFO: > GET /api/getsubcategorias [] {"clientIp":"10.0.0.102","token":"593d647298473"}
+[2017-06-11 17:40:34] silex-bootstrap.INFO: < 200 [] {"clientIp":"10.0.0.102","token":"593d647298473"}
+[2017-06-11 17:40:34] silex-bootstrap.DEBUG: Script executed in 285.185ms. {"msExecTime":285.185,"method":"GET","path":"/api/getsubcategorias"} {"clientIp":"10.0.0.102","token":"593d647298473"}
+[2017-06-11 17:40:57] silex-bootstrap.INFO: Matched route "GET_api_getcategorias" (parameters: "_controller": "app.default_controller:getCategorias", "_route": "GET_api_getcategorias") [] {"clientIp":"10.0.0.107","token":"593d64895a446"}
+[2017-06-11 17:40:57] silex-bootstrap.INFO: > GET /api/getcategorias [] {"clientIp":"10.0.0.107","token":"593d64895a446"}
+[2017-06-11 17:40:58] silex-bootstrap.INFO: < 200 [] {"clientIp":"10.0.0.107","token":"593d64895a446"}
+[2017-06-11 17:40:58] silex-bootstrap.DEBUG: Script executed in 711.669ms. {"msExecTime":711.669,"method":"GET","path":"/api/getcategorias"} {"clientIp":"10.0.0.107","token":"593d64895a446"}
+[2017-06-11 17:41:20] silex-bootstrap.INFO: Matched route "GET_api_getsubcategorias" (parameters: "_controller": "app.default_controller:getSubCategorias", "_route": "GET_api_getsubcategorias") [] {"clientIp":"10.0.0.107","token":"593d64a067dd5"}
+[2017-06-11 17:41:20] silex-bootstrap.INFO: > GET /api/getsubcategorias [] {"clientIp":"10.0.0.107","token":"593d64a067dd5"}
+[2017-06-11 17:41:20] silex-bootstrap.INFO: < 200 [] {"clientIp":"10.0.0.107","token":"593d64a067dd5"}
+[2017-06-11 17:41:20] silex-bootstrap.DEBUG: Script executed in 46.141ms. {"msExecTime":46.141,"method":"GET","path":"/api/getsubcategorias"} {"clientIp":"10.0.0.107","token":"593d64a067dd5"}
